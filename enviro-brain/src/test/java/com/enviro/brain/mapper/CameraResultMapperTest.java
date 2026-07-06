@@ -102,8 +102,33 @@ class CameraResultMapperTest {
 
     @Test
     void findBySyncVersionGreaterThan_shouldReturnNewerResults() {
-        List<CameraResult> results = mapper.findBySyncVersionGreaterThan(0L, 100);
-        assertThat(results).allMatch(r -> r.getSyncVersion() != null && r.getSyncVersion() > 0);
+        Long recordId = insertRecord();
+
+        // Insert results with different syncVersion values
+        CameraResult resultV2 = new CameraResult();
+        resultV2.setRecordId(recordId);
+        resultV2.setCameraCode("CAM-SYNC-V2");
+        resultV2.setCameraName("同步测试2");
+        resultV2.setStatus("ONLINE");
+        resultV2.setSyncVersion(2L);
+        mapper.insert(resultV2);
+
+        CameraResult resultV3 = new CameraResult();
+        resultV3.setRecordId(recordId);
+        resultV3.setCameraCode("CAM-SYNC-V3");
+        resultV3.setCameraName("同步测试3");
+        resultV3.setStatus("ONLINE");
+        resultV3.setSyncVersion(3L);
+        mapper.insert(resultV3);
+
+        // Query with syncVersion > 2: should only get V3
+        List<CameraResult> results = mapper.findBySyncVersionGreaterThan(2L, 100);
+
+        assertThat(results).isNotEmpty();
+        assertThat(results).allMatch(r -> r.getSyncVersion() > 2L);
+        assertThat(results).extracting(CameraResult::getCameraCode)
+                .contains("CAM-SYNC-V3")
+                .doesNotContain("CAM-SYNC-V2");
     }
 
     @Test

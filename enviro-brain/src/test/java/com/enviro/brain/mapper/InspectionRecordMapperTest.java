@@ -74,25 +74,37 @@ class InspectionRecordMapperTest {
 
     @Test
     void findBySyncVersionGreaterThan_shouldReturnNewerRecords() {
-        // Insert record with syncVersion = 0 (default)
-        InspectionRecord oldRecord = new InspectionRecord();
-        oldRecord.setBatchId("BATCH-OLD");
-        oldRecord.setInspectionDate(LocalDate.now());
-        oldRecord.setTotalCameras(1);
-        oldRecord.setOnlineCount(1);
-        oldRecord.setOfflineCount(0);
-        oldRecord.setAbnormalCount(0);
-        oldRecord.setStatus("COMPLETED");
-        oldRecord.setSyncVersion(0L);
-        mapper.insert(oldRecord);
+        // Insert records with different syncVersion values
+        InspectionRecord recordV1 = new InspectionRecord();
+        recordV1.setBatchId("BATCH-SYNC-V1");
+        recordV1.setInspectionDate(LocalDate.now());
+        recordV1.setTotalCameras(1);
+        recordV1.setOnlineCount(1);
+        recordV1.setOfflineCount(0);
+        recordV1.setAbnormalCount(0);
+        recordV1.setStatus("COMPLETED");
+        recordV1.setSyncVersion(1L);
+        mapper.insert(recordV1);
 
-        // Update sync_version manually for testing
-        // (In real usage, sync_version is set by the sync mechanism)
+        InspectionRecord recordV2 = new InspectionRecord();
+        recordV2.setBatchId("BATCH-SYNC-V2");
+        recordV2.setInspectionDate(LocalDate.now());
+        recordV2.setTotalCameras(2);
+        recordV2.setOnlineCount(2);
+        recordV2.setOfflineCount(0);
+        recordV2.setAbnormalCount(0);
+        recordV2.setStatus("COMPLETED");
+        recordV2.setSyncVersion(2L);
+        mapper.insert(recordV2);
 
-        List<InspectionRecord> results = mapper.findBySyncVersionGreaterThan(0L, 10);
+        // Query records with syncVersion > 1: should only return recordV2
+        List<InspectionRecord> results = mapper.findBySyncVersionGreaterThan(1L, 10);
 
-        // oldRecord has syncVersion=0, so it should NOT be returned
-        assertThat(results).allMatch(r -> r.getSyncVersion() != null && r.getSyncVersion() > 0);
+        assertThat(results).isNotEmpty();
+        assertThat(results).allMatch(r -> r.getSyncVersion() > 1L);
+        assertThat(results).extracting(InspectionRecord::getBatchId)
+                .contains("BATCH-SYNC-V2")
+                .doesNotContain("BATCH-SYNC-V1");
     }
 
     @Test

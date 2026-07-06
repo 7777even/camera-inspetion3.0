@@ -93,8 +93,31 @@ class LedgerRecordMapperTest {
 
     @Test
     void findBySyncVersionGreaterThan_shouldReturnNewerRecords() {
-        List<LedgerRecord> results = mapper.findBySyncVersionGreaterThan(0L, 100);
-        assertThat(results).allMatch(r -> r.getSyncVersion() != null && r.getSyncVersion() > 0);
+        Long recordId = insertRecord();
+
+        // Insert records with different syncVersion values
+        LedgerRecord recordV5 = new LedgerRecord();
+        recordV5.setRecordId(recordId);
+        recordV5.setInspectionDate(LocalDate.now());
+        recordV5.setContent("台账同步V5");
+        recordV5.setSyncVersion(5L);
+        mapper.insert(recordV5);
+
+        LedgerRecord recordV6 = new LedgerRecord();
+        recordV6.setRecordId(recordId);
+        recordV6.setInspectionDate(LocalDate.now());
+        recordV6.setContent("台账同步V6");
+        recordV6.setSyncVersion(6L);
+        mapper.insert(recordV6);
+
+        // Query with syncVersion > 5: should only return V6
+        List<LedgerRecord> results = mapper.findBySyncVersionGreaterThan(5L, 100);
+
+        assertThat(results).isNotEmpty();
+        assertThat(results).allMatch(r -> r.getSyncVersion() > 5L);
+        assertThat(results).extracting(LedgerRecord::getContent)
+                .contains("台账同步V6")
+                .doesNotContain("台账同步V5");
     }
 
     @Test

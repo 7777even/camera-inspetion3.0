@@ -14,17 +14,17 @@
 - [x] 2.4 ledger_records 表 DDL（含外键 + sync_version + idx_sync_version）
 - [x] 2.5 camera_config 表 DDL（camera_code UNIQUE）
 - [x] 2.6 sync_version_seq 表 DDL（单行初始值 1）
-- [ ] 2.7 在本地 MySQL 执行 schema.sql，验证所有表和索引创建成功 ⚠️ 环境阻塞：无可用 MySQL
+- [x] 2.7 在本地 MySQL 5.7.39 执行 schema.sql，5 表 + 全部索引 + 2 外键验证通过（修复 CHECK COMMENT 语法兼容 MySQL 5.7）
 
 ## 3. Entity + Mapper 层 (enviro-brain)
 
-- [ ] 3.1 创建 Entity 类：InspectionRecord、CameraResult、LedgerRecord、CameraConfig + HasSyncVersion 接口
-- [ ] 3.2 编写 MyBatis Mapper XML：InspectionRecordMapper.xml（CRUD + 按 sync_version 增量查询）
-- [ ] 3.3 编写 CameraResultMapper.xml（CRUD + 增量查询）
-- [ ] 3.4 编写 LedgerRecordMapper.xml（CRUD + 增量查询）
-- [ ] 3.5 编写 CameraConfigMapper.xml（CRUD + 按 camera_code 查询 + upsert）
-- [ ] 3.6 编写 SyncVersionMapper 接口 + XML（nextVersion）
-- [ ] 3.7 编写单元测试验证 Mapper 可用性
+- [x] 3.1 创建 Entity 类：InspectionRecord、CameraResult、LedgerRecord、CameraConfig + HasSyncVersion 接口
+- [x] 3.2 编写 MyBatis Mapper XML：InspectionRecordMapper.xml（CRUD + 按 sync_version 增量查询）
+- [x] 3.3 编写 CameraResultMapper.xml（CRUD + 增量查询）
+- [x] 3.4 编写 LedgerRecordMapper.xml（CRUD + 增量查询）
+- [x] 3.5 编写 CameraConfigMapper.xml（CRUD + 按 camera_code 查询 + upsert）
+- [x] 3.6 编写 SyncVersionMapper 接口 + XML（nextVersion，FOR UPDATE 原子操作）
+- [x] 3.7 编写单元测试验证 Mapper 可用性（35 tests PASS，含 review 修复后的增量同步测试）
 
 ## 4. API Key 认证 (enviro-brain)
 

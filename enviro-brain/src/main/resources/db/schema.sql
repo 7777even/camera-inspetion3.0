@@ -72,7 +72,7 @@ CREATE TABLE sync_version_seq (
     id INT PRIMARY KEY DEFAULT 1,
     next_val BIGINT NOT NULL DEFAULT 1 COMMENT '下一个版本号',
     updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    CHECK (id = 1) COMMENT '确保只有一行'
+    CHECK (id = 1)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT '全局同步版本序列';
 
 INSERT INTO sync_version_seq (id, next_val) VALUES (1, 1);

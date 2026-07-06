@@ -24,6 +24,9 @@ venv/
 # Node
 node_modules/
 
+# Maven local repo (build cache)
+.m2/
+
 # Environment
 .env
 .env.local
