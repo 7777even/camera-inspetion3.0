@@ -23,10 +23,8 @@ class CameraResultMapperTest {
     @Autowired
     private InspectionRecordMapper inspectionRecordMapper;
 
-    /**
-     * 每个测试前插入一个巡检记录，满足外键约束
-     */
-    private Long insertRecord(Long id) {
+    /** 插入一个巡检记录，满足外键约束 */
+    private Long insertRecord() {
         InspectionRecord record = new InspectionRecord();
         record.setBatchId("BATCH-TEST-" + System.nanoTime());
         record.setInspectionDate(java.time.LocalDate.now());
@@ -41,7 +39,7 @@ class CameraResultMapperTest {
 
     @Test
     void insert_shouldGenerateId() {
-        Long recordId = insertRecord(0);
+        Long recordId = insertRecord();
 
         CameraResult result = new CameraResult();
         result.setRecordId(recordId);
@@ -60,7 +58,7 @@ class CameraResultMapperTest {
 
     @Test
     void findById_shouldReturnResult() {
-        Long recordId = insertRecord(0);
+        Long recordId = insertRecord();
 
         CameraResult result = new CameraResult();
         result.setRecordId(recordId);
@@ -80,7 +78,7 @@ class CameraResultMapperTest {
 
     @Test
     void findByRecordId_shouldReturnResults() {
-        Long recordId = insertRecord(0);
+        Long recordId = insertRecord();
 
         CameraResult result1 = new CameraResult();
         result1.setRecordId(recordId);
@@ -110,7 +108,7 @@ class CameraResultMapperTest {
 
     @Test
     void findAll_shouldReturnAllResults() {
-        Long recordId = insertRecord(0);
+        Long recordId = insertRecord();
 
         CameraResult result = new CameraResult();
         result.setRecordId(recordId);

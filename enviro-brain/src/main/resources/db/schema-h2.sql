@@ -79,4 +79,4 @@ CREATE TABLE sync_version_seq (
     updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
-INSERT INTO sync_version_seq (id, next_val) VALUES (1, 1);
+INSERT INTO sync_version_seq (id, next_val) VALUES (1, 0);

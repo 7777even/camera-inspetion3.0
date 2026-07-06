@@ -30,57 +30,18 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running com.enviro.brain.entity.CameraConfigTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 s -- in com.enviro.brain.entity.CameraConfigTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.070 s -- in com.enviro.brain.entity.CameraConfigTest
 [INFO] Running com.enviro.brain.entity.CameraResultTest
-[ERROR] Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.019 s <<< FAILURE! -- in com.enviro.brain.entity.CameraResultTest
-[ERROR] com.enviro.brain.entity.CameraResultTest.should_implement_HasSyncVersion -- Time elapsed: 0.009 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <null> but was: <0>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertNull.failNotNull(AssertNull.java:50)
-	at org.junit.jupiter.api.AssertNull.assertNull(AssertNull.java:35)
-	at org.junit.jupiter.api.AssertNull.assertNull(AssertNull.java:30)
-	at org.junit.jupiter.api.Assertions.assertNull(Assertions.java:279)
-	at com.enviro.brain.entity.CameraResultTest.should_implement_HasSyncVersion(CameraResultTest.java:27)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s -- in com.enviro.brain.entity.CameraResultTest
 [INFO] Running com.enviro.brain.entity.HasSyncVersionTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s -- in com.enviro.brain.entity.HasSyncVersionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s -- in com.enviro.brain.entity.HasSyncVersionTest
 [INFO] Running com.enviro.brain.entity.InspectionRecordTest
-[ERROR] Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.007 s <<< FAILURE! -- in com.enviro.brain.entity.InspectionRecordTest
-[ERROR] com.enviro.brain.entity.InspectionRecordTest.should_implement_HasSyncVersion -- Time elapsed: 0.002 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <null> but was: <0>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertNull.failNotNull(AssertNull.java:50)
-	at org.junit.jupiter.api.AssertNull.assertNull(AssertNull.java:35)
-	at org.junit.jupiter.api.AssertNull.assertNull(AssertNull.java:30)
-	at org.junit.jupiter.api.Assertions.assertNull(Assertions.java:279)
-	at com.enviro.brain.entity.InspectionRecordTest.should_implement_HasSyncVersion(InspectionRecordTest.java:30)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s -- in com.enviro.brain.entity.InspectionRecordTest
 [INFO] Running com.enviro.brain.entity.LedgerRecordTest
-[ERROR] Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.009 s <<< FAILURE! -- in com.enviro.brain.entity.LedgerRecordTest
-[ERROR] com.enviro.brain.entity.LedgerRecordTest.should_implement_HasSyncVersion -- Time elapsed: 0.004 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <null> but was: <0>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertNull.failNotNull(AssertNull.java:50)
-	at org.junit.jupiter.api.AssertNull.assertNull(AssertNull.java:35)
-	at org.junit.jupiter.api.AssertNull.assertNull(AssertNull.java:30)
-	at org.junit.jupiter.api.Assertions.assertNull(Assertions.java:279)
-	at com.enviro.brain.entity.LedgerRecordTest.should_implement_HasSyncVersion(LedgerRecordTest.java:26)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s -- in com.enviro.brain.entity.LedgerRecordTest
 [INFO] Running com.enviro.brain.mapper.CameraConfigMapperTest
-11:48:55.386 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.enviro.brain.mapper.CameraConfigMapperTest]: CameraConfigMapperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-11:48:55.585 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.enviro.brain.EnviroBrainApplication for test class com.enviro.brain.mapper.CameraConfigMapperTest
+11:52:12.995 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.enviro.brain.mapper.CameraConfigMapperTest]: CameraConfigMapperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:52:13.232 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.enviro.brain.EnviroBrainApplication for test class com.enviro.brain.mapper.CameraConfigMapperTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -91,12 +52,12 @@ org.opentest4j.AssertionFailedError: expected: <null> but was: <0>
 
  :: Spring Boot ::                (v3.3.5)
 
-2026-07-06T11:48:56.328+08:00  INFO 35716 --- [           main] c.e.brain.mapper.CameraConfigMapperTest  : Starting CameraConfigMapperTest using Java 17.0.12 with PID 35716 (started by 7even in D:\gkproject\camera-inspection3.0\enviro-brain)
-2026-07-06T11:48:56.330+08:00  INFO 35716 --- [           main] c.e.brain.mapper.CameraConfigMapperTest  : The following 1 profile is active: "test"
-2026-07-06T11:48:57.018+08:00  INFO 35716 --- [           main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
-2026-07-06T11:48:57.579+08:00  INFO 35716 --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:beaa51a4-53b9-49ba-bf8c-1d266848eb86;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-06T11:52:13.867+08:00  INFO 33668 --- [           main] c.e.brain.mapper.CameraConfigMapperTest  : Starting CameraConfigMapperTest using Java 17.0.12 with PID 33668 (started by 7even in D:\gkproject\camera-inspection3.0\enviro-brain)
+2026-07-06T11:52:13.870+08:00  INFO 33668 --- [           main] c.e.brain.mapper.CameraConfigMapperTest  : The following 1 profile is active: "test"
+2026-07-06T11:52:14.510+08:00  INFO 33668 --- [           main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-07-06T11:52:15.101+08:00  INFO 33668 --- [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:02547366-148b-4e32-8219-3df8f0b043c5;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
 Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
-2026-07-06T11:48:58.679+08:00  INFO 35716 --- [           main] c.e.brain.mapper.CameraConfigMapperTest  : Started CameraConfigMapperTest in 2.998 seconds (process running for 4.626)
+2026-07-06T11:52:16.198+08:00  INFO 33668 --- [           main] c.e.brain.mapper.CameraConfigMapperTest  : Started CameraConfigMapperTest in 2.873 seconds (process running for 4.567)
 mvn.cmd : Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstra
 p classpath has been appended
 所在位置 行:4 字符: 11
@@ -106,1612 +67,586 @@ p classpath has been appended
     + FullyQualifiedErrorId : NativeCommandError
  
 Creating a new SqlSession
-Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5ed31735]
-JDBC Connection [conn2: url=jdbc:h2:mem:beaa51a4-53b9-49ba-bf8c-1d266848eb86 user=SA] will be managed by Spring
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7493d937]
+JDBC Connection [conn2: url=jdbc:h2:mem:02547366-148b-4e32-8219-3df8f0b043c5 user=SA] will be managed by Spring
 ==>  Preparing: INSERT INTO camera_config ( camera_code, camera_name, rtsp_url, location, enabled ) VALUES ( ?, ?, ?, ?, ? )
 ==> Parameters: CAM-CFG-001(String), 配置测试摄像头(String), rtsp://192.168.1.100:554/stream(String), 一楼大厅(String), 1(Integer)
 <==    Updates: 1
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5ed31735]
-Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5ed31735]
-Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5ed31735]
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7493d937]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7493d937]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7493d937]
 Creating a new SqlSession
-Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bfe47a8]
-JDBC Connection [conn3: url=jdbc:h2:mem:beaa51a4-53b9-49ba-bf8c-1d266848eb86 user=SA] will be managed by Spring
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5817f1ca]
+JDBC Connection [conn3: url=jdbc:h2:mem:02547366-148b-4e32-8219-3df8f0b043c5 user=SA] will be managed by Spring
 ==>  Preparing: INSERT INTO camera_config ( camera_code, camera_name, rtsp_url, location, enabled ) VALUES ( ?, ?, ?, ?, ? )
 ==> Parameters: CAM-FINDALL(String), findAll测试(String), rtsp://192.168.1.103:554/stream(String), null, 1(Integer)
 <==    Updates: 1
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bfe47a8]
-Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bfe47a8] from current transaction
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5817f1ca]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5817f1ca] from current transaction
 ==>  Preparing: SELECT * FROM camera_config ORDER BY id ASC
 ==> Parameters: 
 <==    Columns: ID, CAMERA_CODE, CAMERA_NAME, RTSP_URL, LOCATION, ENABLED, CREATED_AT, UPDATED_AT
-<==        Row: 2, CAM-FINDALL, findAll测试, rtsp://192.168.1.103:554/stream, null, 1, 2026-07-06 11:48:59.980931, 2026-07-06 11:48:59.980931
+<==        Row: 2, CAM-FINDALL, findAll测试, rtsp://192.168.1.103:554/stream, null, 1, 2026-07-06 11:52:17.46052, 2026-07-06 11:52:17.46052
 <==      Total: 1
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bfe47a8]
-Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bfe47a8]
-Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bfe47a8]
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5817f1ca]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5817f1ca]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5817f1ca]
 Creating a new SqlSession
-Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d2fc130]
-JDBC Connection [conn4: url=jdbc:h2:mem:beaa51a4-53b9-49ba-bf8c-1d266848eb86 user=SA] will be managed by Spring
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d3cce46]
+JDBC Connection [conn4: url=jdbc:h2:mem:02547366-148b-4e32-8219-3df8f0b043c5 user=SA] will be managed by Spring
 ==>  Preparing: INSERT INTO camera_config ( camera_code, camera_name, rtsp_url, location, enabled ) VALUES ( ?, ?, ?, ?, ? )
 ==> Parameters: CAM-UPDATE-001(String), 更新前(String), rtsp://192.168.1.400:554/stream(String), 五楼(String), 1(Integer)
 <==    Updates: 1
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d2fc130]
-Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d2fc130] from current transaction
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d3cce46]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d3cce46] from current transaction
 ==>  Preparing: UPDATE camera_config SET camera_name = ?, rtsp_url = ?, location = ?, enabled = ?, updated_at = CURRENT_TIMESTAMP WHERE id = ?
 ==> Parameters: 更新后(String), rtsp://192.168.1.400:554/stream(String), 五楼-新位置(String), 0(Integer), 3(Long)
 <==    Updates: 1
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d2fc130]
-Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d2fc130] from current transaction
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d3cce46]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d3cce46] from current transaction
 ==>  Preparing: SELECT * FROM camera_config WHERE camera_code = ?
 ==> Parameters: CAM-UPDATE-001(String)
 <==    Columns: ID, CAMERA_CODE, CAMERA_NAME, RTSP_URL, LOCATION, ENABLED, CREATED_AT, UPDATED_AT
-<==        Row: 3, CAM-UPDATE-001, 更新后, rtsp://192.168.1.400:554/stream, 五楼-新位置, 0, 2026-07-06 11:49:00.041934, 2026-07-06 11:49:00.041934
+<==        Row: 3, CAM-UPDATE-001, 更新后, rtsp://192.168.1.400:554/stream, 五楼-新位置, 0, 2026-07-06 11:52:17.513703, 2026-07-06 11:52:17.513703
 <==      Total: 1
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d2fc130]
-Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d2fc130]
-Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d2fc130]
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d3cce46]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d3cce46]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d3cce46]
 Creating a new SqlSession
-Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3193e21d]
-JDBC Connection [conn5: url=jdbc:h2:mem:beaa51a4-53b9-49ba-bf8c-1d266848eb86 user=SA] will be managed by Spring
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a9bce99]
+JDBC Connection [conn5: url=jdbc:h2:mem:02547366-148b-4e32-8219-3df8f0b043c5 user=SA] will be managed by Spring
 ==>  Preparing: INSERT INTO camera_config ( camera_code, camera_name, rtsp_url, location, enabled ) VALUES ( ?, ?, ?, ?, ? )
 ==> Parameters: CAM-DELETE-001(String), 待删除(String), rtsp://192.168.1.300:554/stream(String), null, 1(Integer)
 <==    Updates: 1
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3193e21d]
-Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3193e21d] from current transaction
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a9bce99]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a9bce99] from current transaction
 ==>  Preparing: DELETE FROM camera_config WHERE camera_code = ?
 ==> Parameters: CAM-DELETE-001(String)
 <==    Updates: 1
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3193e21d]
-Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3193e21d] from current transaction
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a9bce99]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a9bce99] from current transaction
 ==>  Preparing: SELECT * FROM camera_config WHERE camera_code = ?
 ==> Parameters: CAM-DELETE-001(String)
 <==      Total: 0
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3193e21d]
-Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3193e21d]
-Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3193e21d]
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a9bce99]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a9bce99]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a9bce99]
 Creating a new SqlSession
-Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31940704]
-JDBC Connection [conn6: url=jdbc:h2:mem:beaa51a4-53b9-49ba-bf8c-1d266848eb86 user=SA] will be managed by Spring
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4be12f6c]
+JDBC Connection [conn6: url=jdbc:h2:mem:02547366-148b-4e32-8219-3df8f0b043c5 user=SA] will be managed by Spring
 ==>  Preparing: INSERT INTO camera_config ( camera_code, camera_name, rtsp_url, location, enabled ) VALUES ( ?, ?, ?, ?, ? )
 ==> Parameters: CAM-UPSERT-002(String), Upsert原始(String), rtsp://192.168.1.201:554/stream(String), 四楼走廊(String), 1(Integer)
 <==    Updates: 1
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31940704]
-Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31940704] from current transaction
-==>  Preparing: INSERT INTO camera_config ( camera_code, camera_name, rtsp_url, location, enabled ) VALUES ( ?, ?, ?, ?, ? ) ON DUPLICATE KEY UPDATE camera_name = VALUES(camera_name), rtsp_url = VALUES(rtsp_url), location = VALUES(location), enabled = VALUES(enabled), updated_at = CURRENT_TIMESTAMP
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31940704]
-Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31940704]
-Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31940704]
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4be12f6c]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4be12f6c] from current transaction
+==>  Preparing: MERGE INTO camera_config (camera_code, camera_name, rtsp_url, location, enabled) KEY (camera_code) VALUES (?, ?, ?, ?, ?)
+==> Parameters: CAM-UPSERT-002(String), Upsert更新后(String), rtsp://192.168.1.201:554/new-stream(String), 四楼走廊-新位置(String), 0(Integer)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4be12f6c]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4be12f6c] from current transaction
+==>  Preparing: SELECT * FROM camera_config WHERE camera_code = ?
+==> Parameters: CAM-UPSERT-002(String)
+<==    Columns: ID, CAMERA_CODE, CAMERA_NAME, RTSP_URL, LOCATION, ENABLED, CREATED_AT, UPDATED_AT
+<==        Row: 5, CAM-UPSERT-002, Upsert更新后, rtsp://192.168.1.201:554/new-stream, 四楼走廊-新位置, 0, 2026-07-06 11:52:17.541708, 2026-07-06 11:52:17.541708
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4be12f6c]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4be12f6c]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4be12f6c]
 Creating a new SqlSession
-Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@573a078]
-JDBC Connection [conn7: url=jdbc:h2:mem:beaa51a4-53b9-49ba-bf8c-1d266848eb86 user=SA] will be managed by Spring
-==>  Preparing: INSERT INTO camera_config ( camera_code, camera_name, rtsp_url, location, enabled ) VALUES ( ?, ?, ?, ?, ? ) ON DUPLICATE KEY UPDATE camera_name = VALUES(camera_name), rtsp_url = VALUES(rtsp_url), location = VALUES(location), enabled = VALUES(enabled), updated_at = CURRENT_TIMESTAMP
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@573a078]
-Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@573a078]
-Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@573a078]
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@218df7d6]
+JDBC Connection [conn7: url=jdbc:h2:mem:02547366-148b-4e32-8219-3df8f0b043c5 user=SA] will be managed by Spring
+==>  Preparing: MERGE INTO camera_config (camera_code, camera_name, rtsp_url, location, enabled) KEY (camera_code) VALUES (?, ?, ?, ?, ?)
+==> Parameters: CAM-UPSERT-001(String), Upsert新增(String), rtsp://192.168.1.200:554/stream(String), 三楼会议室(String), 1(Integer)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@218df7d6]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@218df7d6] from current transaction
+==>  Preparing: SELECT * FROM camera_config WHERE camera_code = ?
+==> Parameters: CAM-UPSERT-001(String)
+<==    Columns: ID, CAMERA_CODE, CAMERA_NAME, RTSP_URL, LOCATION, ENABLED, CREATED_AT, UPDATED_AT
+<==        Row: 6, CAM-UPSERT-001, Upsert新增, rtsp://192.168.1.200:554/stream, 三楼会议室, 1, 2026-07-06 11:52:17.551705, 2026-07-06 11:52:17.551705
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@218df7d6]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@218df7d6]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@218df7d6]
 Creating a new SqlSession
-Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fdb7394]
-JDBC Connection [conn8: url=jdbc:h2:mem:beaa51a4-53b9-49ba-bf8c-1d266848eb86 user=SA] will be managed by Spring
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20864cd1]
+JDBC Connection [conn8: url=jdbc:h2:mem:02547366-148b-4e32-8219-3df8f0b043c5 user=SA] will be managed by Spring
 ==>  Preparing: INSERT INTO camera_config ( camera_code, camera_name, rtsp_url, location, enabled ) VALUES ( ?, ?, ?, ?, ? )
 ==> Parameters: CAM-CFG-002(String), 查找测试(String), rtsp://192.168.1.101:554/stream(String), 二楼办公室(String), 1(Integer)
 <==    Updates: 1
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fdb7394]
-Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fdb7394] from current transaction
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20864cd1]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20864cd1] from current transaction
 ==>  Preparing: SELECT * FROM camera_config WHERE id = ?
-==> Parameters: 6(Long)
+==> Parameters: 7(Long)
 <==    Columns: ID, CAMERA_CODE, CAMERA_NAME, RTSP_URL, LOCATION, ENABLED, CREATED_AT, UPDATED_AT
-<==        Row: 6, CAM-CFG-002, 查找测试, rtsp://192.168.1.101:554/stream, 二楼办公室, 1, 2026-07-06 11:49:00.275931, 2026-07-06 11:49:00.275931
+<==        Row: 7, CAM-CFG-002, 查找测试, rtsp://192.168.1.101:554/stream, 二楼办公室, 1, 2026-07-06 11:52:17.557703, 2026-07-06 11:52:17.557703
 <==      Total: 1
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fdb7394]
-Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fdb7394]
-Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fdb7394]
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20864cd1]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20864cd1]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20864cd1]
 Creating a new SqlSession
-Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7540160e]
-JDBC Connection [conn9: url=jdbc:h2:mem:beaa51a4-53b9-49ba-bf8c-1d266848eb86 user=SA] will be managed by Spring
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31940704]
+JDBC Connection [conn9: url=jdbc:h2:mem:02547366-148b-4e32-8219-3df8f0b043c5 user=SA] will be managed by Spring
 ==>  Preparing: INSERT INTO camera_config ( camera_code, camera_name, rtsp_url, location, enabled ) VALUES ( ?, ?, ?, ?, ? )
 ==> Parameters: CAM-UNIQUE-001(String), 唯一编码测试(String), rtsp://192.168.1.102:554/stream(String), null, 1(Integer)
 <==    Updates: 1
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7540160e]
-Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7540160e] from current transaction
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31940704]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31940704] from current transaction
 ==>  Preparing: SELECT * FROM camera_config WHERE camera_code = ?
 ==> Parameters: CAM-UNIQUE-001(String)
 <==    Columns: ID, CAMERA_CODE, CAMERA_NAME, RTSP_URL, LOCATION, ENABLED, CREATED_AT, UPDATED_AT
-<==        Row: 7, CAM-UNIQUE-001, 唯一编码测试, rtsp://192.168.1.102:554/stream, null, 1, 2026-07-06 11:49:00.283929, 2026-07-06 11:49:00.283929
+<==        Row: 8, CAM-UNIQUE-001, 唯一编码测试, rtsp://192.168.1.102:554/stream, null, 1, 2026-07-06 11:52:17.565702, 2026-07-06 11:52:17.565702
 <==      Total: 1
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7540160e]
-Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7540160e]
-Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7540160e]
-[ERROR] Tests run: 8, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 5.198 s <<< FAILURE! -- in com.enviro.brain.mapper.CameraConfigMapperTest
-[ERROR] com.enviro.brain.mapper.CameraConfigMapperTest.upsert_shouldUpdateWhenExists -- Time elapsed: 0.188 s <<< ERROR!
-org.springframework.jdbc.BadSqlGrammarException: 
-
-### Error updating database.  Cause: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO camera_config (\000a            camera_code, camera_name, rtsp_url, location, enabled\000a        ) VALUES (\000a            ?, ?, ?, ?, ?\000a        )\000a        [*]ON DUPLICATE KEY UPDATE\000a            camera_name = VALUES(camera_name),\000a            rtsp_url = VALUES(rtsp_url),\000a            location = VALUES(location),\000a            enabled = VALUES(enabled),\000a            updated_at = CURRENT_TIMESTAMP"; SQL statement:
-INSERT INTO camera_config (
-            camera_code, camera_name, rtsp_url, location, enabled
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        )
-        ON DUPLICATE KEY UPDATE
-            camera_name = VALUES(camera_name),
-            rtsp_url = VALUES(rtsp_url),
-            location = VALUES(location),
-            enabled = VALUES(enabled),
-            updated_at = CURRENT_TIMESTAMP [42000-224]
-### The error may exist in file [D:\gkproject\camera-inspection3.0\enviro-brain\target\classes\mapper\CameraConfigMapper.xml]
-### The error may involve com.enviro.brain.mapper.CameraConfigMapper.upsert
-### The error occurred while executing an update
-### SQL: INSERT INTO camera_config (             camera_code, camera_name, rtsp_url, location, enabled         ) VALUES (             ?, ?, ?, ?, ?         )         ON DUPLICATE KEY UPDATE             camera_name = VALUES(camera_name),             rtsp_url = VALUES(rtsp_url),             location = VALUES(location),             enabled = VALUES(enabled),             updated_at = CURRENT_TIMESTAMP
-### Cause: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO camera_config (\000a            camera_code, camera_name, rtsp_url, location, enabled\000a        ) VALUES (\000a            ?, ?, ?, ?, ?\000a        )\000a        [*]ON DUPLICATE KEY UPDATE\000a            camera_name = VALUES(camera_name),\000a            rtsp_url = VALUES(rtsp_url),\000a            location = VALUES(location),\000a            enabled = VALUES(enabled),\000a            updated_at = CURRENT_TIMESTAMP"; SQL statement:
-INSERT INTO camera_config (
-            camera_code, camera_name, rtsp_url, location, enabled
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        )
-        ON DUPLICATE KEY UPDATE
-            camera_name = VALUES(camera_name),
-            rtsp_url = VALUES(rtsp_url),
-            location = VALUES(location),
-            enabled = VALUES(enabled),
-            updated_at = CURRENT_TIMESTAMP [42000-224]
-; bad SQL grammar []
-	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:246)
-	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
-	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:92)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
-	at jdk.proxy2/jdk.proxy2.$Proxy58.update(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:288)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
-	at jdk.proxy2/jdk.proxy2.$Proxy60.upsert(Unknown Source)
-	at com.enviro.brain.mapper.CameraConfigMapperTest.upsert_shouldUpdateWhenExists(CameraConfigMapperTest.java:118)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO camera_config (\000a            camera_code, camera_name, rtsp_url, location, enabled\000a        ) VALUES (\000a            ?, ?, ?, ?, ?\000a        )\000a        [*]ON DUPLICATE KEY UPDATE\000a            camera_name = VALUES(camera_name),\000a            rtsp_url = VALUES(rtsp_url),\000a            location = VALUES(location),\000a            enabled = VALUES(enabled),\000a            updated_at = CURRENT_TIMESTAMP"; SQL statement:
-INSERT INTO camera_config (
-            camera_code, camera_name, rtsp_url, location, enabled
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        )
-        ON DUPLICATE KEY UPDATE
-            camera_name = VALUES(camera_name),
-            rtsp_url = VALUES(rtsp_url),
-            location = VALUES(location),
-            enabled = VALUES(enabled),
-            updated_at = CURRENT_TIMESTAMP [42000-224]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
-	at org.h2.message.DbException.get(DbException.java:223)
-	at org.h2.message.DbException.get(DbException.java:199)
-	at org.h2.message.DbException.getSyntaxError(DbException.java:247)
-	at org.h2.command.ParserBase.getSyntaxError(ParserBase.java:748)
-	at org.h2.command.Parser.prepareCommand(Parser.java:486)
-	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
-	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
-	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
-	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
-	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:316)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:53)
-	at jdk.proxy3/jdk.proxy3.$Proxy118.prepareStatement(Unknown Source)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:88)
-	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:90)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:60)
-	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:90)
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
-	... 10 more
-
-[ERROR] com.enviro.brain.mapper.CameraConfigMapperTest.upsert_shouldInsertWhenNotExists -- Time elapsed: 0.006 s <<< ERROR!
-org.springframework.jdbc.BadSqlGrammarException: 
-
-### Error updating database.  Cause: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO camera_config (\000a            camera_code, camera_name, rtsp_url, location, enabled\000a        ) VALUES (\000a            ?, ?, ?, ?, ?\000a        )\000a        [*]ON DUPLICATE KEY UPDATE\000a            camera_name = VALUES(camera_name),\000a            rtsp_url = VALUES(rtsp_url),\000a            location = VALUES(location),\000a            enabled = VALUES(enabled),\000a            updated_at = CURRENT_TIMESTAMP"; SQL statement:
-INSERT INTO camera_config (
-            camera_code, camera_name, rtsp_url, location, enabled
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        )
-        ON DUPLICATE KEY UPDATE
-            camera_name = VALUES(camera_name),
-            rtsp_url = VALUES(rtsp_url),
-            location = VALUES(location),
-            enabled = VALUES(enabled),
-            updated_at = CURRENT_TIMESTAMP [42000-224]
-### The error may exist in file [D:\gkproject\camera-inspection3.0\enviro-brain\target\classes\mapper\CameraConfigMapper.xml]
-### The error may involve com.enviro.brain.mapper.CameraConfigMapper.upsert
-### The error occurred while executing an update
-### SQL: INSERT INTO camera_config (             camera_code, camera_name, rtsp_url, location, enabled         ) VALUES (             ?, ?, ?, ?, ?         )         ON DUPLICATE KEY UPDATE             camera_name = VALUES(camera_name),             rtsp_url = VALUES(rtsp_url),             location = VALUES(location),             enabled = VALUES(enabled),             updated_at = CURRENT_TIMESTAMP
-### Cause: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO camera_config (\000a            camera_code, camera_name, rtsp_url, location, enabled\000a        ) VALUES (\000a            ?, ?, ?, ?, ?\000a        )\000a        [*]ON DUPLICATE KEY UPDATE\000a            camera_name = VALUES(camera_name),\000a            rtsp_url = VALUES(rtsp_url),\000a            location = VALUES(location),\000a            enabled = VALUES(enabled),\000a            updated_at = CURRENT_TIMESTAMP"; SQL statement:
-INSERT INTO camera_config (
-            camera_code, camera_name, rtsp_url, location, enabled
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        )
-        ON DUPLICATE KEY UPDATE
-            camera_name = VALUES(camera_name),
-            rtsp_url = VALUES(rtsp_url),
-            location = VALUES(location),
-            enabled = VALUES(enabled),
-            updated_at = CURRENT_TIMESTAMP [42000-224]
-; bad SQL grammar []
-	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:246)
-	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
-	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:92)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
-	at jdk.proxy2/jdk.proxy2.$Proxy58.update(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:288)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
-	at jdk.proxy2/jdk.proxy2.$Proxy60.upsert(Unknown Source)
-	at com.enviro.brain.mapper.CameraConfigMapperTest.upsert_shouldInsertWhenNotExists(CameraConfigMapperTest.java:90)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO camera_config (\000a            camera_code, camera_name, rtsp_url, location, enabled\000a        ) VALUES (\000a            ?, ?, ?, ?, ?\000a        )\000a        [*]ON DUPLICATE KEY UPDATE\000a            camera_name = VALUES(camera_name),\000a            rtsp_url = VALUES(rtsp_url),\000a            location = VALUES(location),\000a            enabled = VALUES(enabled),\000a            updated_at = CURRENT_TIMESTAMP"; SQL statement:
-INSERT INTO camera_config (
-            camera_code, camera_name, rtsp_url, location, enabled
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        )
-        ON DUPLICATE KEY UPDATE
-            camera_name = VALUES(camera_name),
-            rtsp_url = VALUES(rtsp_url),
-            location = VALUES(location),
-            enabled = VALUES(enabled),
-            updated_at = CURRENT_TIMESTAMP [42000-224]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
-	at org.h2.message.DbException.get(DbException.java:223)
-	at org.h2.message.DbException.get(DbException.java:199)
-	at org.h2.message.DbException.getSyntaxError(DbException.java:247)
-	at org.h2.command.ParserBase.getSyntaxError(ParserBase.java:748)
-	at org.h2.command.Parser.prepareCommand(Parser.java:486)
-	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
-	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
-	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
-	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
-	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:316)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:53)
-	at jdk.proxy3/jdk.proxy3.$Proxy118.prepareStatement(Unknown Source)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:88)
-	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:90)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:60)
-	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:90)
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
-	... 10 more
-
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31940704]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31940704]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31940704]
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.895 s -- in com.enviro.brain.mapper.CameraConfigMapperTest
 [INFO] Running com.enviro.brain.mapper.CameraResultMapperTest
-2026-07-06T11:49:00.297+08:00  INFO 35716 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.enviro.brain.mapper.CameraResultMapperTest]: CameraResultMapperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-07-06T11:49:00.310+08:00  INFO 35716 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.enviro.brain.EnviroBrainApplication for test class com.enviro.brain.mapper.CameraResultMapperTest
+2026-07-06T11:52:17.577+08:00  INFO 33668 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.enviro.brain.mapper.CameraResultMapperTest]: CameraResultMapperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-07-06T11:52:17.589+08:00  INFO 33668 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.enviro.brain.EnviroBrainApplication for test class com.enviro.brain.mapper.CameraResultMapperTest
 Creating a new SqlSession
-Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17d76ebb]
-JDBC Connection [conn10: url=jdbc:h2:mem:beaa51a4-53b9-49ba-bf8c-1d266848eb86 user=SA] will be managed by Spring
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ccdacf5]
+JDBC Connection [conn10: url=jdbc:h2:mem:02547366-148b-4e32-8219-3df8f0b043c5 user=SA] will be managed by Spring
+==>  Preparing: INSERT INTO inspection_records ( batch_id, inspection_date, total_cameras, online_count, offline_count, abnormal_count, status, sync_version ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: BATCH-TEST-11124500804700(String), 2026-07-06(LocalDate), 10(Integer), 8(Integer), 1(Integer), 1(Integer), RUNNING(String), 0(Long)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ccdacf5]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ccdacf5] from current transaction
 ==>  Preparing: INSERT INTO camera_results ( record_id, camera_code, camera_name, status, quality_score, screenshot_path, error_message, sync_version ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
 ==> Parameters: 1(Long), CAM-002(String), 摄像头002(String), OFFLINE(String), 0.00(BigDecimal), null, Connection timeout(String), 0(Long)
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17d76ebb]
-Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17d76ebb]
-Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17d76ebb]
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ccdacf5]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ccdacf5] from current transaction
+==>  Preparing: SELECT * FROM camera_results WHERE id = ?
+==> Parameters: 1(Long)
+<==    Columns: ID, RECORD_ID, CAMERA_CODE, CAMERA_NAME, STATUS, QUALITY_SCORE, SCREENSHOT_PATH, ERROR_MESSAGE, SYNC_VERSION, CREATED_AT
+<==        Row: 1, 1, CAM-002, 摄像头002, OFFLINE, 0.00, null, Connection timeout, 0, 2026-07-06 11:52:17.598376
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ccdacf5]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ccdacf5]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ccdacf5]
 Creating a new SqlSession
-Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4de91056]
-JDBC Connection [conn11: url=jdbc:h2:mem:beaa51a4-53b9-49ba-bf8c-1d266848eb86 user=SA] will be managed by Spring
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f26b992]
+JDBC Connection [conn11: url=jdbc:h2:mem:02547366-148b-4e32-8219-3df8f0b043c5 user=SA] will be managed by Spring
+==>  Preparing: INSERT INTO inspection_records ( batch_id, inspection_date, total_cameras, online_count, offline_count, abnormal_count, status, sync_version ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: BATCH-TEST-11124516417500(String), 2026-07-06(LocalDate), 10(Integer), 8(Integer), 1(Integer), 1(Integer), RUNNING(String), 0(Long)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f26b992]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f26b992] from current transaction
 ==>  Preparing: INSERT INTO camera_results ( record_id, camera_code, camera_name, status, quality_score, screenshot_path, error_message, sync_version ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
-==> Parameters: 1(Long), CAM-001(String), 摄像头001(String), ONLINE(String), 85.50(BigDecimal), /screenshots/CAM-001-001.jpg(String), null, 0(Long)
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4de91056]
-Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4de91056]
-Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4de91056]
+==> Parameters: 2(Long), CAM-001(String), 摄像头001(String), ONLINE(String), 85.50(BigDecimal), /screenshots/CAM-001-001.jpg(String), null, 0(Long)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f26b992]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f26b992]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f26b992]
 Creating a new SqlSession
-Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@778c2e7c]
-JDBC Connection [conn12: url=jdbc:h2:mem:beaa51a4-53b9-49ba-bf8c-1d266848eb86 user=SA] will be managed by Spring
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67fac095]
+JDBC Connection [conn12: url=jdbc:h2:mem:02547366-148b-4e32-8219-3df8f0b043c5 user=SA] will be managed by Spring
 ==>  Preparing: SELECT * FROM camera_results WHERE sync_version > ? ORDER BY sync_version ASC LIMIT ?
 ==> Parameters: 0(Long), 100(Integer)
 <==      Total: 0
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@778c2e7c]
-Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@778c2e7c]
-Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@778c2e7c]
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67fac095]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67fac095]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67fac095]
 Creating a new SqlSession
-Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@105dc04d]
-JDBC Connection [conn13: url=jdbc:h2:mem:beaa51a4-53b9-49ba-bf8c-1d266848eb86 user=SA] will be managed by Spring
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@786ff0ea]
+JDBC Connection [conn13: url=jdbc:h2:mem:02547366-148b-4e32-8219-3df8f0b043c5 user=SA] will be managed by Spring
+==>  Preparing: INSERT INTO inspection_records ( batch_id, inspection_date, total_cameras, online_count, offline_count, abnormal_count, status, sync_version ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: BATCH-TEST-11124533681400(String), 2026-07-06(LocalDate), 10(Integer), 8(Integer), 1(Integer), 1(Integer), RUNNING(String), 0(Long)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@786ff0ea]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@786ff0ea] from current transaction
 ==>  Preparing: INSERT INTO camera_results ( record_id, camera_code, camera_name, status, quality_score, screenshot_path, error_message, sync_version ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
-==> Parameters: 999(Long), CAM-003(String), 摄像头003(String), ONLINE(String), null, null, null, 0(Long)
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@105dc04d]
-Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@105dc04d]
-Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@105dc04d]
+==> Parameters: 3(Long), CAM-003(String), 摄像头003(String), ONLINE(String), null, null, null, 0(Long)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@786ff0ea]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@786ff0ea] from current transaction
+==>  Preparing: INSERT INTO camera_results ( record_id, camera_code, camera_name, status, quality_score, screenshot_path, error_message, sync_version ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: 3(Long), CAM-004(String), 摄像头004(String), ABNORMAL(String), null, null, null, 0(Long)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@786ff0ea]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@786ff0ea] from current transaction
+==>  Preparing: SELECT * FROM camera_results WHERE record_id = ? ORDER BY id ASC
+==> Parameters: 3(Long)
+<==    Columns: ID, RECORD_ID, CAMERA_CODE, CAMERA_NAME, STATUS, QUALITY_SCORE, SCREENSHOT_PATH, ERROR_MESSAGE, SYNC_VERSION, CREATED_AT
+<==        Row: 3, 3, CAM-003, 摄像头003, ONLINE, null, null, null, 0, 2026-07-06 11:52:17.628375
+<==        Row: 4, 3, CAM-004, 摄像头004, ABNORMAL, null, null, null, 0, 2026-07-06 11:52:17.628375
+<==      Total: 2
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@786ff0ea]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@786ff0ea]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@786ff0ea]
 Creating a new SqlSession
-Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6501b105]
-JDBC Connection [conn14: url=jdbc:h2:mem:beaa51a4-53b9-49ba-bf8c-1d266848eb86 user=SA] will be managed by Spring
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@194b9783]
+JDBC Connection [conn14: url=jdbc:h2:mem:02547366-148b-4e32-8219-3df8f0b043c5 user=SA] will be managed by Spring
+==>  Preparing: INSERT INTO inspection_records ( batch_id, inspection_date, total_cameras, online_count, offline_count, abnormal_count, status, sync_version ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: BATCH-TEST-11124548428700(String), 2026-07-06(LocalDate), 10(Integer), 8(Integer), 1(Integer), 1(Integer), RUNNING(String), 0(Long)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@194b9783]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@194b9783] from current transaction
 ==>  Preparing: INSERT INTO camera_results ( record_id, camera_code, camera_name, status, quality_score, screenshot_path, error_message, sync_version ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
-==> Parameters: 1(Long), CAM-ALL(String), 摄像头ALL(String), ONLINE(String), null, null, null, 0(Long)
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6501b105]
-Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6501b105]
-Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6501b105]
-[ERROR] Tests run: 5, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.075 s <<< FAILURE! -- in com.enviro.brain.mapper.CameraResultMapperTest
-[ERROR] com.enviro.brain.mapper.CameraResultMapperTest.findById_shouldReturnResult -- Time elapsed: 0.010 s <<< ERROR!
-org.springframework.dao.DataIntegrityViolationException: 
-
-### Error updating database.  Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FC: PUBLIC.CAMERA_RESULTS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO camera_results (
-            record_id, camera_code, camera_name, status, quality_score,
-            screenshot_path, error_message, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?,
-            ?, ?, ?
-        ) [23506-224]
-### The error may exist in file [D:\gkproject\camera-inspection3.0\enviro-brain\target\classes\mapper\CameraResultMapper.xml]
-### The error may involve com.enviro.brain.mapper.CameraResultMapper.insert-Inline
-### The error occurred while setting parameters
-### SQL: INSERT INTO camera_results (             record_id, camera_code, camera_name, status, quality_score,             screenshot_path, error_message, sync_version         ) VALUES (             ?, ?, ?, ?, ?,             ?, ?, ?         )
-### Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FC: PUBLIC.CAMERA_RESULTS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO camera_results (
-            record_id, camera_code, camera_name, status, quality_score,
-            screenshot_path, error_message, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?,
-            ?, ?, ?
-        ) [23506-224]
-; Referential integrity constraint violation: "CONSTRAINT_FC: PUBLIC.CAMERA_RESULTS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO camera_results (
-            record_id, camera_code, camera_name, status, quality_score,
-            screenshot_path, error_message, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?,
-            ?, ?, ?
-        ) [23506-224]
-	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:258)
-	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
-	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:92)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
-	at jdk.proxy2/jdk.proxy2.$Proxy58.insert(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
-	at jdk.proxy2/jdk.proxy2.$Proxy114.insert(Unknown Source)
-	at com.enviro.brain.mapper.CameraResultMapperTest.findById_shouldReturnResult(CameraResultMapperTest.java:48)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FC: PUBLIC.CAMERA_RESULTS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO camera_results (
-            record_id, camera_code, camera_name, status, quality_score,
-            screenshot_path, error_message, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?,
-            ?, ?, ?
-        ) [23506-224]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
-	at org.h2.message.DbException.get(DbException.java:223)
-	at org.h2.message.DbException.get(DbException.java:199)
-	at org.h2.constraint.ConstraintReferential.checkRowOwnTable(ConstraintReferential.java:311)
-	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:252)
-	at org.h2.table.Table.fireConstraints(Table.java:1200)
-	at org.h2.table.Table.fireAfterRow(Table.java:1218)
-	at org.h2.command.dml.Insert.insertRows(Insert.java:188)
-	at org.h2.command.dml.Insert.update(Insert.java:135)
-	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:242)
-	at org.h2.command.CommandContainer.update(CommandContainer.java:163)
-	at org.h2.command.Command.executeUpdate(Command.java:256)
-	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:265)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
-	at jdk.proxy3/jdk.proxy3.$Proxy119.execute(Unknown Source)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
-	... 10 more
-
-[ERROR] com.enviro.brain.mapper.CameraResultMapperTest.insert_shouldGenerateId -- Time elapsed: 0.010 s <<< ERROR!
-org.springframework.dao.DataIntegrityViolationException: 
-
-### Error updating database.  Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FC: PUBLIC.CAMERA_RESULTS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO camera_results (
-            record_id, camera_code, camera_name, status, quality_score,
-            screenshot_path, error_message, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?,
-            ?, ?, ?
-        ) [23506-224]
-### The error may exist in file [D:\gkproject\camera-inspection3.0\enviro-brain\target\classes\mapper\CameraResultMapper.xml]
-### The error may involve com.enviro.brain.mapper.CameraResultMapper.insert-Inline
-### The error occurred while setting parameters
-### SQL: INSERT INTO camera_results (             record_id, camera_code, camera_name, status, quality_score,             screenshot_path, error_message, sync_version         ) VALUES (             ?, ?, ?, ?, ?,             ?, ?, ?         )
-### Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FC: PUBLIC.CAMERA_RESULTS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO camera_results (
-            record_id, camera_code, camera_name, status, quality_score,
-            screenshot_path, error_message, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?,
-            ?, ?, ?
-        ) [23506-224]
-; Referential integrity constraint violation: "CONSTRAINT_FC: PUBLIC.CAMERA_RESULTS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO camera_results (
-            record_id, camera_code, camera_name, status, quality_score,
-            screenshot_path, error_message, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?,
-            ?, ?, ?
-        ) [23506-224]
-	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:258)
-	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
-	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:92)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
-	at jdk.proxy2/jdk.proxy2.$Proxy58.insert(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
-	at jdk.proxy2/jdk.proxy2.$Proxy114.insert(Unknown Source)
-	at com.enviro.brain.mapper.CameraResultMapperTest.insert_shouldGenerateId(CameraResultMapperTest.java:33)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FC: PUBLIC.CAMERA_RESULTS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO camera_results (
-            record_id, camera_code, camera_name, status, quality_score,
-            screenshot_path, error_message, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?,
-            ?, ?, ?
-        ) [23506-224]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
-	at org.h2.message.DbException.get(DbException.java:223)
-	at org.h2.message.DbException.get(DbException.java:199)
-	at org.h2.constraint.ConstraintReferential.checkRowOwnTable(ConstraintReferential.java:311)
-	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:252)
-	at org.h2.table.Table.fireConstraints(Table.java:1200)
-	at org.h2.table.Table.fireAfterRow(Table.java:1218)
-	at org.h2.command.dml.Insert.insertRows(Insert.java:188)
-	at org.h2.command.dml.Insert.update(Insert.java:135)
-	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:242)
-	at org.h2.command.CommandContainer.update(CommandContainer.java:163)
-	at org.h2.command.Command.executeUpdate(Command.java:256)
-	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:265)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
-	at jdk.proxy3/jdk.proxy3.$Proxy119.execute(Unknown Source)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
-	... 10 more
-
-[ERROR] com.enviro.brain.mapper.CameraResultMapperTest.findByRecordId_shouldReturnResults -- Time elapsed: 0.008 s <<< ERROR!
-org.springframework.dao.DataIntegrityViolationException: 
-
-### Error updating database.  Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FC: PUBLIC.CAMERA_RESULTS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(999 AS BIGINT))"; SQL statement:
-INSERT INTO camera_results (
-            record_id, camera_code, camera_name, status, quality_score,
-            screenshot_path, error_message, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?,
-            ?, ?, ?
-        ) [23506-224]
-### The error may exist in file [D:\gkproject\camera-inspection3.0\enviro-brain\target\classes\mapper\CameraResultMapper.xml]
-### The error may involve com.enviro.brain.mapper.CameraResultMapper.insert-Inline
-### The error occurred while setting parameters
-### SQL: INSERT INTO camera_results (             record_id, camera_code, camera_name, status, quality_score,             screenshot_path, error_message, sync_version         ) VALUES (             ?, ?, ?, ?, ?,             ?, ?, ?         )
-### Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FC: PUBLIC.CAMERA_RESULTS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(999 AS BIGINT))"; SQL statement:
-INSERT INTO camera_results (
-            record_id, camera_code, camera_name, status, quality_score,
-            screenshot_path, error_message, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?,
-            ?, ?, ?
-        ) [23506-224]
-; Referential integrity constraint violation: "CONSTRAINT_FC: PUBLIC.CAMERA_RESULTS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(999 AS BIGINT))"; SQL statement:
-INSERT INTO camera_results (
-            record_id, camera_code, camera_name, status, quality_score,
-            screenshot_path, error_message, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?,
-            ?, ?, ?
-        ) [23506-224]
-	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:258)
-	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
-	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:92)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
-	at jdk.proxy2/jdk.proxy2.$Proxy58.insert(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
-	at jdk.proxy2/jdk.proxy2.$Proxy114.insert(Unknown Source)
-	at com.enviro.brain.mapper.CameraResultMapperTest.findByRecordId_shouldReturnResults(CameraResultMapperTest.java:64)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FC: PUBLIC.CAMERA_RESULTS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(999 AS BIGINT))"; SQL statement:
-INSERT INTO camera_results (
-            record_id, camera_code, camera_name, status, quality_score,
-            screenshot_path, error_message, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?,
-            ?, ?, ?
-        ) [23506-224]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
-	at org.h2.message.DbException.get(DbException.java:223)
-	at org.h2.message.DbException.get(DbException.java:199)
-	at org.h2.constraint.ConstraintReferential.checkRowOwnTable(ConstraintReferential.java:311)
-	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:252)
-	at org.h2.table.Table.fireConstraints(Table.java:1200)
-	at org.h2.table.Table.fireAfterRow(Table.java:1218)
-	at org.h2.command.dml.Insert.insertRows(Insert.java:188)
-	at org.h2.command.dml.Insert.update(Insert.java:135)
-	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:242)
-	at org.h2.command.CommandContainer.update(CommandContainer.java:163)
-	at org.h2.command.Command.executeUpdate(Command.java:256)
-	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:265)
-	at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
-	at jdk.proxy3/jdk.proxy3.$Proxy119.execute(Unknown Source)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
-	... 10 more
-
-[ERROR] com.enviro.brain.mapper.CameraResultMapperTest.findAll_shouldReturnAllResults -- Time elapsed: 0.008 s <<< ERROR!
-org.springframework.dao.DataIntegrityViolationException: 
-
-### Error updating database.  Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FC: PUBLIC.CAMERA_RESULTS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO camera_results (
-            record_id, camera_code, camera_name, status, quality_score,
-            screenshot_path, error_message, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?,
-            ?, ?, ?
-        ) [23506-224]
-### The error may exist in file [D:\gkproject\camera-inspection3.0\enviro-brain\target\classes\mapper\CameraResultMapper.xml]
-### The error may involve com.enviro.brain.mapper.CameraResultMapper.insert-Inline
-### The error occurred while setting parameters
-### SQL: INSERT INTO camera_results (             record_id, camera_code, camera_name, status, quality_score,             screenshot_path, error_message, sync_version         ) VALUES (             ?, ?, ?, ?, ?,             ?, ?, ?         )
-### Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FC: PUBLIC.CAMERA_RESULTS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO camera_results (
-            record_id, camera_code, camera_name, status, quality_score,
-            screenshot_path, error_message, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?,
-            ?, ?, ?
-        ) [23506-224]
-; Referential integrity constraint violation: "CONSTRAINT_FC: PUBLIC.CAMERA_RESULTS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO camera_results (
-            record_id, camera_code, camera_name, status, quality_score,
-            screenshot_path, error_message, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?,
-            ?, ?, ?
-        ) [23506-224]
-	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:258)
-	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
-	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:92)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
-	at jdk.proxy2/jdk.proxy2.$Proxy58.insert(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
-	at jdk.proxy2/jdk.proxy2.$Proxy114.insert(Unknown Source)
-	at com.enviro.brain.mapper.CameraResultMapperTest.findAll_shouldReturnAllResults(CameraResultMapperTest.java:93)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FC: PUBLIC.CAMERA_RESULTS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO camera_results (
-            record_id, camera_code, camera_name, status, quality_score,
-            screenshot_path, error_message, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?,
-            ?, ?, ?
-        ) [23506-224]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
-	at org.h2.message.DbException.get(DbException.java:223)
-	at org.h2.message.DbException.get(DbException.java:199)
-	at org.h2.constraint.ConstraintReferential.checkRowOwnTable(ConstraintReferential.java:311)
-	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:252)
-	at org.h2.table.Table.fireConstraints(Table.java:1200)
-	at org.h2.table.Table.fireAfterRow(Table.java:1218)
-	at org.h2.command.dml.Insert.insertRows(Insert.java:188)
-	at org.h2.command.dml.Insert.update(Insert.java:135)
-	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:242)
-	at org.h2.command.CommandContainer.update(CommandContainer.java:163)
-	at org.h2.command.Command.executeUpdate(Command.java:256)
-	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:265)
-	at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
-	at jdk.proxy3/jdk.proxy3.$Proxy119.execute(Unknown Source)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
-	... 10 more
-
+==> Parameters: 4(Long), CAM-ALL(String), 摄像头ALL(String), ONLINE(String), null, null, null, 0(Long)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@194b9783]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@194b9783] from current transaction
+==>  Preparing: SELECT * FROM camera_results ORDER BY created_at DESC
+==> Parameters: 
+<==    Columns: ID, RECORD_ID, CAMERA_CODE, CAMERA_NAME, STATUS, QUALITY_SCORE, SCREENSHOT_PATH, ERROR_MESSAGE, SYNC_VERSION, CREATED_AT
+<==        Row: 5, 4, CAM-ALL, 摄像头ALL, ONLINE, null, null, null, 0, 2026-07-06 11:52:17.643373
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@194b9783]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@194b9783]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@194b9783]
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 s -- in com.enviro.brain.mapper.CameraResultMapperTest
 [INFO] Running com.enviro.brain.mapper.InspectionRecordMapperTest
-2026-07-06T11:49:00.372+08:00  INFO 35716 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.enviro.brain.mapper.InspectionRecordMapperTest]: InspectionRecordMapperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-07-06T11:49:00.380+08:00  INFO 35716 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.enviro.brain.EnviroBrainApplication for test class com.enviro.brain.mapper.InspectionRecordMapperTest
+2026-07-06T11:52:17.656+08:00  INFO 33668 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.enviro.brain.mapper.InspectionRecordMapperTest]: InspectionRecordMapperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-07-06T11:52:17.662+08:00  INFO 33668 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.enviro.brain.EnviroBrainApplication for test class com.enviro.brain.mapper.InspectionRecordMapperTest
 Creating a new SqlSession
-Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@580c17a0]
-JDBC Connection [conn15: url=jdbc:h2:mem:beaa51a4-53b9-49ba-bf8c-1d266848eb86 user=SA] will be managed by Spring
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7757a37f]
+JDBC Connection [conn15: url=jdbc:h2:mem:02547366-148b-4e32-8219-3df8f0b043c5 user=SA] will be managed by Spring
 ==>  Preparing: INSERT INTO inspection_records ( batch_id, inspection_date, total_cameras, online_count, offline_count, abnormal_count, status, sync_version ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
 ==> Parameters: BATCH-002(String), 2026-07-06(LocalDate), 5(Integer), 4(Integer), 1(Integer), 0(Integer), COMPLETED(String), 0(Long)
 <==    Updates: 1
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@580c17a0]
-Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@580c17a0] from current transaction
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7757a37f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7757a37f] from current transaction
 ==>  Preparing: SELECT * FROM inspection_records WHERE id = ?
-==> Parameters: 1(Long)
+==> Parameters: 5(Long)
 <==    Columns: ID, BATCH_ID, INSPECTION_DATE, TOTAL_CAMERAS, ONLINE_COUNT, OFFLINE_COUNT, ABNORMAL_COUNT, STATUS, SYNC_VERSION, CREATED_AT, UPDATED_AT
-<==        Row: 1, BATCH-002, 2026-07-06, 5, 4, 1, 0, COMPLETED, 0, 2026-07-06 11:49:00.38893, 2026-07-06 11:49:00.38893
+<==        Row: 5, BATCH-002, 2026-07-06, 5, 4, 1, 0, COMPLETED, 0, 2026-07-06 11:52:17.666376, 2026-07-06 11:52:17.666376
 <==      Total: 1
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@580c17a0]
-Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@580c17a0]
-Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@580c17a0]
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7757a37f]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7757a37f]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7757a37f]
 Creating a new SqlSession
-Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2bc0b8c8]
-JDBC Connection [conn16: url=jdbc:h2:mem:beaa51a4-53b9-49ba-bf8c-1d266848eb86 user=SA] will be managed by Spring
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d7c9811]
+JDBC Connection [conn16: url=jdbc:h2:mem:02547366-148b-4e32-8219-3df8f0b043c5 user=SA] will be managed by Spring
 ==>  Preparing: INSERT INTO inspection_records ( batch_id, inspection_date, total_cameras, online_count, offline_count, abnormal_count, status, sync_version ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
 ==> Parameters: BATCH-001(String), 2026-07-06(LocalDate), 10(Integer), 8(Integer), 2(Integer), 0(Integer), COMPLETED(String), 0(Long)
 <==    Updates: 1
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2bc0b8c8]
-Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2bc0b8c8]
-Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2bc0b8c8]
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d7c9811]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d7c9811]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d7c9811]
 Creating a new SqlSession
-Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c6ac73c]
-JDBC Connection [conn17: url=jdbc:h2:mem:beaa51a4-53b9-49ba-bf8c-1d266848eb86 user=SA] will be managed by Spring
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79cdf2d4]
+JDBC Connection [conn17: url=jdbc:h2:mem:02547366-148b-4e32-8219-3df8f0b043c5 user=SA] will be managed by Spring
 ==>  Preparing: INSERT INTO inspection_records ( batch_id, inspection_date, total_cameras, online_count, offline_count, abnormal_count, status, sync_version ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
 ==> Parameters: BATCH-OLD(String), 2026-07-06(LocalDate), 1(Integer), 1(Integer), 0(Integer), 0(Integer), COMPLETED(String), 0(Long)
 <==    Updates: 1
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c6ac73c]
-Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c6ac73c] from current transaction
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79cdf2d4]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79cdf2d4] from current transaction
 ==>  Preparing: SELECT * FROM inspection_records WHERE sync_version > ? ORDER BY sync_version ASC LIMIT ?
 ==> Parameters: 0(Long), 10(Integer)
 <==      Total: 0
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c6ac73c]
-Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c6ac73c]
-Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c6ac73c]
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79cdf2d4]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79cdf2d4]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79cdf2d4]
 Creating a new SqlSession
-Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@365bfc5f]
-JDBC Connection [conn18: url=jdbc:h2:mem:beaa51a4-53b9-49ba-bf8c-1d266848eb86 user=SA] will be managed by Spring
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67d5ac2f]
+JDBC Connection [conn18: url=jdbc:h2:mem:02547366-148b-4e32-8219-3df8f0b043c5 user=SA] will be managed by Spring
 ==>  Preparing: INSERT INTO inspection_records ( batch_id, inspection_date, total_cameras, online_count, offline_count, abnormal_count, status, sync_version ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
 ==> Parameters: BATCH-ALL-1(String), 2026-07-06(LocalDate), 1(Integer), 1(Integer), 0(Integer), 0(Integer), COMPLETED(String), 0(Long)
 <==    Updates: 1
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@365bfc5f]
-Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@365bfc5f] from current transaction
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67d5ac2f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67d5ac2f] from current transaction
 ==>  Preparing: INSERT INTO inspection_records ( batch_id, inspection_date, total_cameras, online_count, offline_count, abnormal_count, status, sync_version ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
 ==> Parameters: BATCH-ALL-2(String), 2026-07-06(LocalDate), 1(Integer), 1(Integer), 0(Integer), 0(Integer), COMPLETED(String), 0(Long)
 <==    Updates: 1
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@365bfc5f]
-Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@365bfc5f] from current transaction
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67d5ac2f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67d5ac2f] from current transaction
 ==>  Preparing: SELECT * FROM inspection_records ORDER BY created_at DESC
 ==> Parameters: 
 <==    Columns: ID, BATCH_ID, INSPECTION_DATE, TOTAL_CAMERAS, ONLINE_COUNT, OFFLINE_COUNT, ABNORMAL_COUNT, STATUS, SYNC_VERSION, CREATED_AT, UPDATED_AT
-<==        Row: 4, BATCH-ALL-1, 2026-07-06, 1, 1, 0, 0, COMPLETED, 0, 2026-07-06 11:49:00.417932, 2026-07-06 11:49:00.417932
-<==        Row: 5, BATCH-ALL-2, 2026-07-06, 1, 1, 0, 0, COMPLETED, 0, 2026-07-06 11:49:00.417932, 2026-07-06 11:49:00.417932
+<==        Row: 8, BATCH-ALL-1, 2026-07-06, 1, 1, 0, 0, COMPLETED, 0, 2026-07-06 11:52:17.690375, 2026-07-06 11:52:17.690375
+<==        Row: 9, BATCH-ALL-2, 2026-07-06, 1, 1, 0, 0, COMPLETED, 0, 2026-07-06 11:52:17.690375, 2026-07-06 11:52:17.690375
 <==      Total: 2
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@365bfc5f]
-Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@365bfc5f]
-Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@365bfc5f]
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67d5ac2f]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67d5ac2f]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67d5ac2f]
 Creating a new SqlSession
-Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@32a033b6]
-JDBC Connection [conn19: url=jdbc:h2:mem:beaa51a4-53b9-49ba-bf8c-1d266848eb86 user=SA] will be managed by Spring
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42ecc554]
+JDBC Connection [conn19: url=jdbc:h2:mem:02547366-148b-4e32-8219-3df8f0b043c5 user=SA] will be managed by Spring
 ==>  Preparing: INSERT INTO inspection_records ( batch_id, inspection_date, total_cameras, online_count, offline_count, abnormal_count, status, sync_version ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
 ==> Parameters: BATCH-003(String), 2026-07-06(LocalDate), 3(Integer), 2(Integer), 1(Integer), 0(Integer), COMPLETED(String), 0(Long)
 <==    Updates: 1
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@32a033b6]
-Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@32a033b6] from current transaction
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42ecc554]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42ecc554] from current transaction
 ==>  Preparing: SELECT * FROM inspection_records WHERE batch_id = ? ORDER BY created_at DESC
 ==> Parameters: BATCH-003(String)
 <==    Columns: ID, BATCH_ID, INSPECTION_DATE, TOTAL_CAMERAS, ONLINE_COUNT, OFFLINE_COUNT, ABNORMAL_COUNT, STATUS, SYNC_VERSION, CREATED_AT, UPDATED_AT
-<==        Row: 6, BATCH-003, 2026-07-06, 3, 2, 1, 0, COMPLETED, 0, 2026-07-06 11:49:00.43793, 2026-07-06 11:49:00.43793
+<==        Row: 10, BATCH-003, 2026-07-06, 3, 2, 1, 0, COMPLETED, 0, 2026-07-06 11:52:17.698375, 2026-07-06 11:52:17.698375
 <==      Total: 1
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@32a033b6]
-Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@32a033b6]
-Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@32a033b6]
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 s -- in com.enviro.brain.mapper.InspectionRecordMapperTest
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42ecc554]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42ecc554]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42ecc554]
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s -- in com.enviro.brain.mapper.InspectionRecordMapperTest
 [INFO] Running com.enviro.brain.mapper.LedgerRecordMapperTest
-2026-07-06T11:49:00.446+08:00  INFO 35716 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.enviro.brain.mapper.LedgerRecordMapperTest]: LedgerRecordMapperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-07-06T11:49:00.455+08:00  INFO 35716 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.enviro.brain.EnviroBrainApplication for test class com.enviro.brain.mapper.LedgerRecordMapperTest
+2026-07-06T11:52:17.704+08:00  INFO 33668 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.enviro.brain.mapper.LedgerRecordMapperTest]: LedgerRecordMapperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-07-06T11:52:17.711+08:00  INFO 33668 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.enviro.brain.EnviroBrainApplication for test class com.enviro.brain.mapper.LedgerRecordMapperTest
 Creating a new SqlSession
-Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@38e00b47]
-JDBC Connection [conn20: url=jdbc:h2:mem:beaa51a4-53b9-49ba-bf8c-1d266848eb86 user=SA] will be managed by Spring
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49986178]
+JDBC Connection [conn20: url=jdbc:h2:mem:02547366-148b-4e32-8219-3df8f0b043c5 user=SA] will be managed by Spring
+==>  Preparing: INSERT INTO inspection_records ( batch_id, inspection_date, total_cameras, online_count, offline_count, abnormal_count, status, sync_version ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: BATCH-LEDGER-11124621206100(String), 2026-07-06(LocalDate), 5(Integer), 5(Integer), 0(Integer), 0(Integer), RUNNING(String), 0(Long)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49986178]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49986178] from current transaction
 ==>  Preparing: INSERT INTO ledger_records ( record_id, inspection_date, content, docx_path, sync_version ) VALUES ( ?, ?, ?, ?, ? )
-==> Parameters: 1(Long), 2026-07-06(LocalDate), 测试查找功能(String), /docs/ledger-find.docx(String), 0(Long)
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@38e00b47]
-Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@38e00b47]
-Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@38e00b47]
+==> Parameters: 11(Long), 2026-07-06(LocalDate), 测试查找功能(String), /docs/ledger-find.docx(String), 0(Long)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49986178]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49986178] from current transaction
+==>  Preparing: SELECT * FROM ledger_records WHERE id = ?
+==> Parameters: 1(Long)
+<==    Columns: ID, RECORD_ID, INSPECTION_DATE, CONTENT, DOCX_PATH, SYNC_VERSION, CREATED_AT, UPDATED_AT
+<==        Row: 1, 11, 2026-07-06, 测试查找功能, /docs/ledger-find.docx, 0, 2026-07-06 11:52:17.716377, 2026-07-06 11:52:17.716377
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49986178]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49986178]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49986178]
 Creating a new SqlSession
-Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@343db2f6]
-JDBC Connection [conn21: url=jdbc:h2:mem:beaa51a4-53b9-49ba-bf8c-1d266848eb86 user=SA] will be managed by Spring
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f106af8]
+JDBC Connection [conn21: url=jdbc:h2:mem:02547366-148b-4e32-8219-3df8f0b043c5 user=SA] will be managed by Spring
+==>  Preparing: INSERT INTO inspection_records ( batch_id, inspection_date, total_cameras, online_count, offline_count, abnormal_count, status, sync_version ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: BATCH-LEDGER-11124631509200(String), 2026-07-06(LocalDate), 5(Integer), 5(Integer), 0(Integer), 0(Integer), RUNNING(String), 0(Long)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f106af8]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f106af8] from current transaction
 ==>  Preparing: INSERT INTO ledger_records ( record_id, inspection_date, content, docx_path, sync_version ) VALUES ( ?, ?, ?, ?, ? )
-==> Parameters: 1(Long), 2026-07-06(LocalDate), 测试台账内容(String), /docs/ledger-001.docx(String), 0(Long)
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@343db2f6]
-Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@343db2f6]
-Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@343db2f6]
+==> Parameters: 12(Long), 2026-07-06(LocalDate), 测试台账内容(String), /docs/ledger-001.docx(String), 0(Long)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f106af8]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f106af8]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f106af8]
 Creating a new SqlSession
-Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ff09659]
-JDBC Connection [conn22: url=jdbc:h2:mem:beaa51a4-53b9-49ba-bf8c-1d266848eb86 user=SA] will be managed by Spring
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1a84a8b2]
+JDBC Connection [conn22: url=jdbc:h2:mem:02547366-148b-4e32-8219-3df8f0b043c5 user=SA] will be managed by Spring
 ==>  Preparing: SELECT * FROM ledger_records WHERE sync_version > ? ORDER BY sync_version ASC LIMIT ?
 ==> Parameters: 0(Long), 100(Integer)
 <==      Total: 0
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ff09659]
-Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ff09659]
-Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ff09659]
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1a84a8b2]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1a84a8b2]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1a84a8b2]
 Creating a new SqlSession
-Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e364f1f]
-JDBC Connection [conn23: url=jdbc:h2:mem:beaa51a4-53b9-49ba-bf8c-1d266848eb86 user=SA] will be managed by Spring
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a1e912f]
+JDBC Connection [conn23: url=jdbc:h2:mem:02547366-148b-4e32-8219-3df8f0b043c5 user=SA] will be managed by Spring
+==>  Preparing: INSERT INTO inspection_records ( batch_id, inspection_date, total_cameras, online_count, offline_count, abnormal_count, status, sync_version ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: BATCH-LEDGER-11124644112400(String), 2026-07-06(LocalDate), 5(Integer), 5(Integer), 0(Integer), 0(Integer), RUNNING(String), 0(Long)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a1e912f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a1e912f] from current transaction
 ==>  Preparing: INSERT INTO ledger_records ( record_id, inspection_date, content, docx_path, sync_version ) VALUES ( ?, ?, ?, ?, ? )
-==> Parameters: 888(Long), 2026-07-06(LocalDate), 台账记录1(String), null, 0(Long)
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e364f1f]
-Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e364f1f]
-Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e364f1f]
+==> Parameters: 13(Long), 2026-07-06(LocalDate), 台账记录1(String), null, 0(Long)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a1e912f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a1e912f] from current transaction
+==>  Preparing: INSERT INTO ledger_records ( record_id, inspection_date, content, docx_path, sync_version ) VALUES ( ?, ?, ?, ?, ? )
+==> Parameters: 13(Long), 2026-07-06(LocalDate), 台账记录2(String), null, 0(Long)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a1e912f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a1e912f] from current transaction
+==>  Preparing: SELECT * FROM ledger_records WHERE record_id = ? ORDER BY id ASC
+==> Parameters: 13(Long)
+<==    Columns: ID, RECORD_ID, INSPECTION_DATE, CONTENT, DOCX_PATH, SYNC_VERSION, CREATED_AT, UPDATED_AT
+<==        Row: 3, 13, 2026-07-06, 台账记录1, null, 0, 2026-07-06 11:52:17.739374, 2026-07-06 11:52:17.739374
+<==        Row: 4, 13, 2026-07-06, 台账记录2, null, 0, 2026-07-06 11:52:17.739374, 2026-07-06 11:52:17.739374
+<==      Total: 2
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a1e912f]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a1e912f]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a1e912f]
 Creating a new SqlSession
-Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2b1a901d]
-JDBC Connection [conn24: url=jdbc:h2:mem:beaa51a4-53b9-49ba-bf8c-1d266848eb86 user=SA] will be managed by Spring
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d088813]
+JDBC Connection [conn24: url=jdbc:h2:mem:02547366-148b-4e32-8219-3df8f0b043c5 user=SA] will be managed by Spring
+==>  Preparing: INSERT INTO inspection_records ( batch_id, inspection_date, total_cameras, online_count, offline_count, abnormal_count, status, sync_version ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: BATCH-LEDGER-11124653885300(String), 2026-07-06(LocalDate), 5(Integer), 5(Integer), 0(Integer), 0(Integer), RUNNING(String), 0(Long)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d088813]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d088813] from current transaction
 ==>  Preparing: INSERT INTO ledger_records ( record_id, inspection_date, content, docx_path, sync_version ) VALUES ( ?, ?, ?, ?, ? )
-==> Parameters: 1(Long), 2026-07-06(LocalDate), findAll测试(String), null, 0(Long)
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2b1a901d]
-Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2b1a901d]
-Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2b1a901d]
-[ERROR] Tests run: 5, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.064 s <<< FAILURE! -- in com.enviro.brain.mapper.LedgerRecordMapperTest
-[ERROR] com.enviro.brain.mapper.LedgerRecordMapperTest.findById_shouldReturnRecord -- Time elapsed: 0.009 s <<< ERROR!
-org.springframework.dao.DataIntegrityViolationException: 
-
-### Error updating database.  Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FB5: PUBLIC.LEDGER_RECORDS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO ledger_records (
-            record_id, inspection_date, content, docx_path, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        ) [23506-224]
-### The error may exist in file [D:\gkproject\camera-inspection3.0\enviro-brain\target\classes\mapper\LedgerRecordMapper.xml]
-### The error may involve com.enviro.brain.mapper.LedgerRecordMapper.insert-Inline
-### The error occurred while setting parameters
-### SQL: INSERT INTO ledger_records (             record_id, inspection_date, content, docx_path, sync_version         ) VALUES (             ?, ?, ?, ?, ?         )
-### Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FB5: PUBLIC.LEDGER_RECORDS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO ledger_records (
-            record_id, inspection_date, content, docx_path, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        ) [23506-224]
-; Referential integrity constraint violation: "CONSTRAINT_FB5: PUBLIC.LEDGER_RECORDS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO ledger_records (
-            record_id, inspection_date, content, docx_path, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        ) [23506-224]
-	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:258)
-	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
-	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:92)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
-	at jdk.proxy2/jdk.proxy2.$Proxy58.insert(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
-	at jdk.proxy2/jdk.proxy2.$Proxy116.insert(Unknown Source)
-	at com.enviro.brain.mapper.LedgerRecordMapperTest.findById_shouldReturnRecord(LedgerRecordMapperTest.java:42)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FB5: PUBLIC.LEDGER_RECORDS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO ledger_records (
-            record_id, inspection_date, content, docx_path, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        ) [23506-224]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
-	at org.h2.message.DbException.get(DbException.java:223)
-	at org.h2.message.DbException.get(DbException.java:199)
-	at org.h2.constraint.ConstraintReferential.checkRowOwnTable(ConstraintReferential.java:311)
-	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:252)
-	at org.h2.table.Table.fireConstraints(Table.java:1200)
-	at org.h2.table.Table.fireAfterRow(Table.java:1218)
-	at org.h2.command.dml.Insert.insertRows(Insert.java:188)
-	at org.h2.command.dml.Insert.update(Insert.java:135)
-	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:242)
-	at org.h2.command.CommandContainer.update(CommandContainer.java:163)
-	at org.h2.command.Command.executeUpdate(Command.java:256)
-	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:265)
-	at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
-	at jdk.proxy3/jdk.proxy3.$Proxy119.execute(Unknown Source)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
-	at jdk.internal.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
-	... 10 more
-
-[ERROR] com.enviro.brain.mapper.LedgerRecordMapperTest.insert_shouldGenerateId -- Time elapsed: 0.008 s <<< ERROR!
-org.springframework.dao.DataIntegrityViolationException: 
-
-### Error updating database.  Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FB5: PUBLIC.LEDGER_RECORDS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO ledger_records (
-            record_id, inspection_date, content, docx_path, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        ) [23506-224]
-### The error may exist in file [D:\gkproject\camera-inspection3.0\enviro-brain\target\classes\mapper\LedgerRecordMapper.xml]
-### The error may involve com.enviro.brain.mapper.LedgerRecordMapper.insert-Inline
-### The error occurred while setting parameters
-### SQL: INSERT INTO ledger_records (             record_id, inspection_date, content, docx_path, sync_version         ) VALUES (             ?, ?, ?, ?, ?         )
-### Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FB5: PUBLIC.LEDGER_RECORDS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO ledger_records (
-            record_id, inspection_date, content, docx_path, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        ) [23506-224]
-; Referential integrity constraint violation: "CONSTRAINT_FB5: PUBLIC.LEDGER_RECORDS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO ledger_records (
-            record_id, inspection_date, content, docx_path, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        ) [23506-224]
-	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:258)
-	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
-	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:92)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
-	at jdk.proxy2/jdk.proxy2.$Proxy58.insert(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
-	at jdk.proxy2/jdk.proxy2.$Proxy116.insert(Unknown Source)
-	at com.enviro.brain.mapper.LedgerRecordMapperTest.insert_shouldGenerateId(LedgerRecordMapperTest.java:29)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FB5: PUBLIC.LEDGER_RECORDS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO ledger_records (
-            record_id, inspection_date, content, docx_path, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        ) [23506-224]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
-	at org.h2.message.DbException.get(DbException.java:223)
-	at org.h2.message.DbException.get(DbException.java:199)
-	at org.h2.constraint.ConstraintReferential.checkRowOwnTable(ConstraintReferential.java:311)
-	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:252)
-	at org.h2.table.Table.fireConstraints(Table.java:1200)
-	at org.h2.table.Table.fireAfterRow(Table.java:1218)
-	at org.h2.command.dml.Insert.insertRows(Insert.java:188)
-	at org.h2.command.dml.Insert.update(Insert.java:135)
-	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:242)
-	at org.h2.command.CommandContainer.update(CommandContainer.java:163)
-	at org.h2.command.Command.executeUpdate(Command.java:256)
-	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:265)
-	at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
-	at jdk.proxy3/jdk.proxy3.$Proxy119.execute(Unknown Source)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
-	at jdk.internal.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
-	... 10 more
-
-[ERROR] com.enviro.brain.mapper.LedgerRecordMapperTest.findByRecordId_shouldReturnRecords -- Time elapsed: 0.009 s <<< ERROR!
-org.springframework.dao.DataIntegrityViolationException: 
-
-### Error updating database.  Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FB5: PUBLIC.LEDGER_RECORDS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(888 AS BIGINT))"; SQL statement:
-INSERT INTO ledger_records (
-            record_id, inspection_date, content, docx_path, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        ) [23506-224]
-### The error may exist in file [D:\gkproject\camera-inspection3.0\enviro-brain\target\classes\mapper\LedgerRecordMapper.xml]
-### The error may involve com.enviro.brain.mapper.LedgerRecordMapper.insert-Inline
-### The error occurred while setting parameters
-### SQL: INSERT INTO ledger_records (             record_id, inspection_date, content, docx_path, sync_version         ) VALUES (             ?, ?, ?, ?, ?         )
-### Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FB5: PUBLIC.LEDGER_RECORDS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(888 AS BIGINT))"; SQL statement:
-INSERT INTO ledger_records (
-            record_id, inspection_date, content, docx_path, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        ) [23506-224]
-; Referential integrity constraint violation: "CONSTRAINT_FB5: PUBLIC.LEDGER_RECORDS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(888 AS BIGINT))"; SQL statement:
-INSERT INTO ledger_records (
-            record_id, inspection_date, content, docx_path, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        ) [23506-224]
-	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:258)
-	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
-	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:92)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
-	at jdk.proxy2/jdk.proxy2.$Proxy58.insert(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
-	at jdk.proxy2/jdk.proxy2.$Proxy116.insert(Unknown Source)
-	at com.enviro.brain.mapper.LedgerRecordMapperTest.findByRecordId_shouldReturnRecords(LedgerRecordMapperTest.java:56)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FB5: PUBLIC.LEDGER_RECORDS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(888 AS BIGINT))"; SQL statement:
-INSERT INTO ledger_records (
-            record_id, inspection_date, content, docx_path, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        ) [23506-224]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
-	at org.h2.message.DbException.get(DbException.java:223)
-	at org.h2.message.DbException.get(DbException.java:199)
-	at org.h2.constraint.ConstraintReferential.checkRowOwnTable(ConstraintReferential.java:311)
-	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:252)
-	at org.h2.table.Table.fireConstraints(Table.java:1200)
-	at org.h2.table.Table.fireAfterRow(Table.java:1218)
-	at org.h2.command.dml.Insert.insertRows(Insert.java:188)
-	at org.h2.command.dml.Insert.update(Insert.java:135)
-	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:242)
-	at org.h2.command.CommandContainer.update(CommandContainer.java:163)
-	at org.h2.command.Command.executeUpdate(Command.java:256)
-	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:265)
-	at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
-	at jdk.proxy3/jdk.proxy3.$Proxy119.execute(Unknown Source)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
-	at jdk.internal.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
-	... 10 more
-
-[ERROR] com.enviro.brain.mapper.LedgerRecordMapperTest.findAll_shouldReturnAllRecords -- Time elapsed: 0.008 s <<< ERROR!
-org.springframework.dao.DataIntegrityViolationException: 
-
-### Error updating database.  Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FB5: PUBLIC.LEDGER_RECORDS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO ledger_records (
-            record_id, inspection_date, content, docx_path, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        ) [23506-224]
-### The error may exist in file [D:\gkproject\camera-inspection3.0\enviro-brain\target\classes\mapper\LedgerRecordMapper.xml]
-### The error may involve com.enviro.brain.mapper.LedgerRecordMapper.insert-Inline
-### The error occurred while setting parameters
-### SQL: INSERT INTO ledger_records (             record_id, inspection_date, content, docx_path, sync_version         ) VALUES (             ?, ?, ?, ?, ?         )
-### Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FB5: PUBLIC.LEDGER_RECORDS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO ledger_records (
-            record_id, inspection_date, content, docx_path, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        ) [23506-224]
-; Referential integrity constraint violation: "CONSTRAINT_FB5: PUBLIC.LEDGER_RECORDS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO ledger_records (
-            record_id, inspection_date, content, docx_path, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        ) [23506-224]
-	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:258)
-	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
-	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:92)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
-	at jdk.proxy2/jdk.proxy2.$Proxy58.insert(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
-	at jdk.proxy2/jdk.proxy2.$Proxy116.insert(Unknown Source)
-	at com.enviro.brain.mapper.LedgerRecordMapperTest.findAll_shouldReturnAllRecords(LedgerRecordMapperTest.java:82)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FB5: PUBLIC.LEDGER_RECORDS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO ledger_records (
-            record_id, inspection_date, content, docx_path, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        ) [23506-224]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
-	at org.h2.message.DbException.get(DbException.java:223)
-	at org.h2.message.DbException.get(DbException.java:199)
-	at org.h2.constraint.ConstraintReferential.checkRowOwnTable(ConstraintReferential.java:311)
-	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:252)
-	at org.h2.table.Table.fireConstraints(Table.java:1200)
-	at org.h2.table.Table.fireAfterRow(Table.java:1218)
-	at org.h2.command.dml.Insert.insertRows(Insert.java:188)
-	at org.h2.command.dml.Insert.update(Insert.java:135)
-	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:242)
-	at org.h2.command.CommandContainer.update(CommandContainer.java:163)
-	at org.h2.command.Command.executeUpdate(Command.java:256)
-	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:265)
-	at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
-	at jdk.proxy3/jdk.proxy3.$Proxy119.execute(Unknown Source)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
-	at jdk.internal.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
-	... 10 more
-
+==> Parameters: 14(Long), 2026-07-06(LocalDate), findAll测试(String), null, 0(Long)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d088813]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d088813] from current transaction
+==>  Preparing: SELECT * FROM ledger_records ORDER BY created_at DESC
+==> Parameters: 
+<==    Columns: ID, RECORD_ID, INSPECTION_DATE, CONTENT, DOCX_PATH, SYNC_VERSION, CREATED_AT, UPDATED_AT
+<==        Row: 5, 14, 2026-07-06, findAll测试, null, 0, 2026-07-06 11:52:17.748375, 2026-07-06 11:52:17.748375
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d088813]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d088813]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d088813]
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.050 s -- in com.enviro.brain.mapper.LedgerRecordMapperTest
 [INFO] Running com.enviro.brain.mapper.SyncVersionMapperTest
-2026-07-06T11:49:00.511+08:00  INFO 35716 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.enviro.brain.mapper.SyncVersionMapperTest]: SyncVersionMapperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-07-06T11:49:00.517+08:00  INFO 35716 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.enviro.brain.EnviroBrainApplication for test class com.enviro.brain.mapper.SyncVersionMapperTest
+2026-07-06T11:52:17.754+08:00  INFO 33668 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.enviro.brain.mapper.SyncVersionMapperTest]: SyncVersionMapperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-07-06T11:52:17.760+08:00  INFO 33668 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.enviro.brain.EnviroBrainApplication for test class com.enviro.brain.mapper.SyncVersionMapperTest
 Creating a new SqlSession
-Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6728370a]
-JDBC Connection [conn25: url=jdbc:h2:mem:beaa51a4-53b9-49ba-bf8c-1d266848eb86 user=SA] will be managed by Spring
-==>  Preparing: UPDATE sync_version_seq SET next_val = next_val + 1 WHERE id = 1 RETURNING next_val;
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6728370a]
-Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6728370a]
-Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6728370a]
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f]
+JDBC Connection [conn25: url=jdbc:h2:mem:02547366-148b-4e32-8219-3df8f0b043c5 user=SA] will be managed by Spring
+==>  Preparing: UPDATE sync_version_seq SET next_val = next_val + 1 WHERE id = 1
+==> Parameters: 
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f] from current transaction
+==>  Preparing: SELECT next_val FROM sync_version_seq WHERE id = 1
+==> Parameters: 
+<==    Columns: NEXT_VAL
+<==        Row: 2
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f] from current transaction
+==>  Preparing: UPDATE sync_version_seq SET next_val = next_val + 1 WHERE id = 1
+==> Parameters: 
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f] from current transaction
+==>  Preparing: SELECT next_val FROM sync_version_seq WHERE id = 1
+==> Parameters: 
+<==    Columns: NEXT_VAL
+<==        Row: 3
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f] from current transaction
+==>  Preparing: UPDATE sync_version_seq SET next_val = next_val + 1 WHERE id = 1
+==> Parameters: 
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f] from current transaction
+==>  Preparing: SELECT next_val FROM sync_version_seq WHERE id = 1
+==> Parameters: 
+<==    Columns: NEXT_VAL
+<==        Row: 4
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f] from current transaction
+==>  Preparing: UPDATE sync_version_seq SET next_val = next_val + 1 WHERE id = 1
+==> Parameters: 
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f] from current transaction
+==>  Preparing: SELECT next_val FROM sync_version_seq WHERE id = 1
+==> Parameters: 
+<==    Columns: NEXT_VAL
+<==        Row: 5
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f] from current transaction
+==>  Preparing: UPDATE sync_version_seq SET next_val = next_val + 1 WHERE id = 1
+==> Parameters: 
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f] from current transaction
+==>  Preparing: SELECT next_val FROM sync_version_seq WHERE id = 1
+==> Parameters: 
+<==    Columns: NEXT_VAL
+<==        Row: 6
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f] from current transaction
+==>  Preparing: UPDATE sync_version_seq SET next_val = next_val + 1 WHERE id = 1
+==> Parameters: 
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f] from current transaction
+==>  Preparing: SELECT next_val FROM sync_version_seq WHERE id = 1
+==> Parameters: 
+<==    Columns: NEXT_VAL
+<==        Row: 7
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f] from current transaction
+==>  Preparing: UPDATE sync_version_seq SET next_val = next_val + 1 WHERE id = 1
+==> Parameters: 
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f] from current transaction
+==>  Preparing: SELECT next_val FROM sync_version_seq WHERE id = 1
+==> Parameters: 
+<==    Columns: NEXT_VAL
+<==        Row: 8
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f] from current transaction
+==>  Preparing: UPDATE sync_version_seq SET next_val = next_val + 1 WHERE id = 1
+==> Parameters: 
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f] from current transaction
+==>  Preparing: SELECT next_val FROM sync_version_seq WHERE id = 1
+==> Parameters: 
+<==    Columns: NEXT_VAL
+<==        Row: 9
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f] from current transaction
+==>  Preparing: UPDATE sync_version_seq SET next_val = next_val + 1 WHERE id = 1
+==> Parameters: 
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f] from current transaction
+==>  Preparing: SELECT next_val FROM sync_version_seq WHERE id = 1
+==> Parameters: 
+<==    Columns: NEXT_VAL
+<==        Row: 10
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f] from current transaction
+==>  Preparing: UPDATE sync_version_seq SET next_val = next_val + 1 WHERE id = 1
+==> Parameters: 
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f] from current transaction
+==>  Preparing: SELECT next_val FROM sync_version_seq WHERE id = 1
+==> Parameters: 
+<==    Columns: NEXT_VAL
+<==        Row: 11
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf65e0f]
 Creating a new SqlSession
-Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@498a4d62]
-JDBC Connection [conn26: url=jdbc:h2:mem:beaa51a4-53b9-49ba-bf8c-1d266848eb86 user=SA] will be managed by Spring
-==>  Preparing: UPDATE sync_version_seq SET next_val = next_val + 1 WHERE id = 1 RETURNING next_val;
-Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@498a4d62]
-Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@498a4d62]
-Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@498a4d62]
-[ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.030 s <<< FAILURE! -- in com.enviro.brain.mapper.SyncVersionMapperTest
-[ERROR] com.enviro.brain.mapper.SyncVersionMapperTest.nextVersion_shouldBeMonotonicallyIncreasing -- Time elapsed: 0.009 s <<< ERROR!
-org.springframework.jdbc.BadSqlGrammarException: 
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5423a17]
+JDBC Connection [conn26: url=jdbc:h2:mem:02547366-148b-4e32-8219-3df8f0b043c5 user=SA] will be managed by Spring
+==>  Preparing: UPDATE sync_version_seq SET next_val = next_val + 1 WHERE id = 1
+==> Parameters: 
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5423a17]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5423a17] from current transaction
+==>  Preparing: SELECT next_val FROM sync_version_seq WHERE id = 1
+==> Parameters: 
+<==    Columns: NEXT_VAL
+<==        Row: 2
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5423a17]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5423a17]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5423a17]
+[ERROR] Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.051 s <<< FAILURE! -- in com.enviro.brain.mapper.SyncVersionMapperTest
+[ERROR] com.enviro.brain.mapper.SyncVersionMapperTest.nextVersion_shouldIncrementAtomically -- Time elapsed: 0.019 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
 
-### Error querying database.  Cause: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE sync_version_seq\000a        SET next_val = next_val + 1\000a        WHERE id = 1\000a        [*]RETURNING next_val;"; SQL statement:
-UPDATE sync_version_seq
-        SET next_val = next_val + 1
-        WHERE id = 1
-        RETURNING next_val; [42000-224]
-### The error may exist in file [D:\gkproject\camera-inspection3.0\enviro-brain\target\classes\mapper\SyncVersionMapper.xml]
-### The error may involve com.enviro.brain.mapper.SyncVersionMapper.nextVersion
-### The error occurred while executing a query
-### SQL: UPDATE sync_version_seq         SET next_val = next_val + 1         WHERE id = 1         RETURNING next_val;
-### Cause: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE sync_version_seq\000a        SET next_val = next_val + 1\000a        WHERE id = 1\000a        [*]RETURNING next_val;"; SQL statement:
-UPDATE sync_version_seq
-        SET next_val = next_val + 1
-        WHERE id = 1
-        RETURNING next_val; [42000-224]
-; bad SQL grammar []
-	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:246)
-	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
-	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:92)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
-	at jdk.proxy2/jdk.proxy2.$Proxy58.selectOne(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
-	at jdk.proxy2/jdk.proxy2.$Proxy117.nextVersion(Unknown Source)
-	at com.enviro.brain.mapper.SyncVersionMapperTest.nextVersion_shouldBeMonotonicallyIncreasing(SyncVersionMapperTest.java:37)
+expected: 1L
+ but was: 2L
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at com.enviro.brain.mapper.SyncVersionMapperTest.nextVersion_shouldIncrementAtomically(SyncVersionMapperTest.java:21)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE sync_version_seq\000a        SET next_val = next_val + 1\000a        WHERE id = 1\000a        [*]RETURNING next_val;"; SQL statement:
-UPDATE sync_version_seq
-        SET next_val = next_val + 1
-        WHERE id = 1
-        RETURNING next_val; [42000-224]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
-	at org.h2.message.DbException.get(DbException.java:223)
-	at org.h2.message.DbException.get(DbException.java:199)
-	at org.h2.message.DbException.getSyntaxError(DbException.java:247)
-	at org.h2.command.ParserBase.getSyntaxError(ParserBase.java:748)
-	at org.h2.command.Parser.prepareCommand(Parser.java:486)
-	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
-	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
-	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
-	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
-	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:316)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:53)
-	at jdk.proxy3/jdk.proxy3.$Proxy118.prepareStatement(Unknown Source)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:88)
-	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:90)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:60)
-	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:90)
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:64)
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:75)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
-	... 10 more
-
-[ERROR] com.enviro.brain.mapper.SyncVersionMapperTest.nextVersion_shouldIncrementAtomically -- Time elapsed: 0.009 s <<< ERROR!
-org.springframework.jdbc.BadSqlGrammarException: 
-
-### Error querying database.  Cause: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE sync_version_seq\000a        SET next_val = next_val + 1\000a        WHERE id = 1\000a        [*]RETURNING next_val;"; SQL statement:
-UPDATE sync_version_seq
-        SET next_val = next_val + 1
-        WHERE id = 1
-        RETURNING next_val; [42000-224]
-### The error may exist in file [D:\gkproject\camera-inspection3.0\enviro-brain\target\classes\mapper\SyncVersionMapper.xml]
-### The error may involve com.enviro.brain.mapper.SyncVersionMapper.nextVersion
-### The error occurred while executing a query
-### SQL: UPDATE sync_version_seq         SET next_val = next_val + 1         WHERE id = 1         RETURNING next_val;
-### Cause: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE sync_version_seq\000a        SET next_val = next_val + 1\000a        WHERE id = 1\000a        [*]RETURNING next_val;"; SQL statement:
-UPDATE sync_version_seq
-        SET next_val = next_val + 1
-        WHERE id = 1
-        RETURNING next_val; [42000-224]
-; bad SQL grammar []
-	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:246)
-	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
-	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:92)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
-	at jdk.proxy2/jdk.proxy2.$Proxy58.selectOne(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
-	at jdk.proxy2/jdk.proxy2.$Proxy117.nextVersion(Unknown Source)
-	at com.enviro.brain.mapper.SyncVersionMapperTest.nextVersion_shouldIncrementAtomically(SyncVersionMapperTest.java:20)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE sync_version_seq\000a        SET next_val = next_val + 1\000a        WHERE id = 1\000a        [*]RETURNING next_val;"; SQL statement:
-UPDATE sync_version_seq
-        SET next_val = next_val + 1
-        WHERE id = 1
-        RETURNING next_val; [42000-224]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
-	at org.h2.message.DbException.get(DbException.java:223)
-	at org.h2.message.DbException.get(DbException.java:199)
-	at org.h2.message.DbException.getSyntaxError(DbException.java:247)
-	at org.h2.command.ParserBase.getSyntaxError(ParserBase.java:748)
-	at org.h2.command.Parser.prepareCommand(Parser.java:486)
-	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
-	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
-	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
-	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
-	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:316)
-	at jdk.internal.reflect.GeneratedMethodAccessor26.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:53)
-	at jdk.proxy3/jdk.proxy3.$Proxy118.prepareStatement(Unknown Source)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:88)
-	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:90)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:60)
-	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:90)
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:64)
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:75)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
-	... 10 more
 
 [INFO] 
 [INFO] Results:
 [INFO] 
 [ERROR] Failures: 
-[ERROR]   CameraResultTest.should_implement_HasSyncVersion:27 expected: <null> but was: <0>
-[ERROR]   InspectionRecordTest.should_implement_HasSyncVersion:30 expected: <null> but was: <0>
-[ERROR]   LedgerRecordTest.should_implement_HasSyncVersion:26 expected: <null> but was: <0>
-[ERROR] Errors: 
-[ERROR]   CameraConfigMapperTest.upsert_shouldInsertWhenNotExists:90 ? BadSqlGrammar 
-### Error updating database.  Cause: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO camera_config (\000a            camera_code, camera_name, rtsp_url, location, enabled\000a        ) VALUES (\000a            ?, ?, ?, ?, ?\000a        )\000a        [*]ON DUPLICATE KEY UPDATE\000a            camera_name = VALUES(camera_name),\000a            rtsp_url = VALUES(rtsp_url),\000a            location = VALUES(location),\000a            enabled = VALUES(enabled),\000a            updated_at = CURRENT_TIMESTAMP"; SQL statement:
-INSERT INTO camera_config (
-            camera_code, camera_name, rtsp_url, location, enabled
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        )
-        ON DUPLICATE KEY UPDATE
-            camera_name = VALUES(camera_name),
-            rtsp_url = VALUES(rtsp_url),
-            location = VALUES(location),
-            enabled = VALUES(enabled),
-            updated_at = CURRENT_TIMESTAMP [42000-224]
-### The error may exist in file [D:\gkproject\camera-inspection3.0\enviro-brain\target\classes\mapper\CameraConfigMapper.xml]
-### The error may involve com.enviro.brain.mapper.CameraConfigMapper.upsert
-### The error occurred while executing an update
-### SQL: INSERT INTO camera_config (             camera_code, camera_name, rtsp_url, location, enabled         ) VALUES (             ?, ?, ?, ?, ?         )         ON DUPLICATE KEY UPDATE             camera_name = VALUES(camera_name),             rtsp_url = VALUES(rtsp_url),             location = VALUES(location),             enabled = VALUES(enabled),             updated_at = CURRENT_TIMESTAMP
-### Cause: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO camera_config (\000a            camera_code, camera_name, rtsp_url, location, enabled\000a        ) VALUES (\000a            ?, ?, ?, ?, ?\000a        )\000a        [*]ON DUPLICATE KEY UPDATE\000a            camera_name = VALUES(camera_name),\000a            rtsp_url = VALUES(rtsp_url),\000a            location = VALUES(location),\000a            enabled = VALUES(enabled),\000a            updated_at = CURRENT_TIMESTAMP"; SQL statement:
-INSERT INTO camera_config (
-            camera_code, camera_name, rtsp_url, location, enabled
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        )
-        ON DUPLICATE KEY UPDATE
-            camera_name = VALUES(camera_name),
-            rtsp_url = VALUES(rtsp_url),
-            location = VALUES(location),
-            enabled = VALUES(enabled),
-            updated_at = CURRENT_TIMESTAMP [42000-224]
-; bad SQL grammar []
-[ERROR]   CameraConfigMapperTest.upsert_shouldUpdateWhenExists:118 ? BadSqlGrammar 
-### Error updating database.  Cause: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO camera_config (\000a            camera_code, camera_name, rtsp_url, location, enabled\000a        ) VALUES (\000a            ?, ?, ?, ?, ?\000a        )\000a        [*]ON DUPLICATE KEY UPDATE\000a            camera_name = VALUES(camera_name),\000a            rtsp_url = VALUES(rtsp_url),\000a            location = VALUES(location),\000a            enabled = VALUES(enabled),\000a            updated_at = CURRENT_TIMESTAMP"; SQL statement:
-INSERT INTO camera_config (
-            camera_code, camera_name, rtsp_url, location, enabled
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        )
-        ON DUPLICATE KEY UPDATE
-            camera_name = VALUES(camera_name),
-            rtsp_url = VALUES(rtsp_url),
-            location = VALUES(location),
-            enabled = VALUES(enabled),
-            updated_at = CURRENT_TIMESTAMP [42000-224]
-### The error may exist in file [D:\gkproject\camera-inspection3.0\enviro-brain\target\classes\mapper\CameraConfigMapper.xml]
-### The error may involve com.enviro.brain.mapper.CameraConfigMapper.upsert
-### The error occurred while executing an update
-### SQL: INSERT INTO camera_config (             camera_code, camera_name, rtsp_url, location, enabled         ) VALUES (             ?, ?, ?, ?, ?         )         ON DUPLICATE KEY UPDATE             camera_name = VALUES(camera_name),             rtsp_url = VALUES(rtsp_url),             location = VALUES(location),             enabled = VALUES(enabled),             updated_at = CURRENT_TIMESTAMP
-### Cause: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO camera_config (\000a            camera_code, camera_name, rtsp_url, location, enabled\000a        ) VALUES (\000a            ?, ?, ?, ?, ?\000a        )\000a        [*]ON DUPLICATE KEY UPDATE\000a            camera_name = VALUES(camera_name),\000a            rtsp_url = VALUES(rtsp_url),\000a            location = VALUES(location),\000a            enabled = VALUES(enabled),\000a            updated_at = CURRENT_TIMESTAMP"; SQL statement:
-INSERT INTO camera_config (
-            camera_code, camera_name, rtsp_url, location, enabled
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        )
-        ON DUPLICATE KEY UPDATE
-            camera_name = VALUES(camera_name),
-            rtsp_url = VALUES(rtsp_url),
-            location = VALUES(location),
-            enabled = VALUES(enabled),
-            updated_at = CURRENT_TIMESTAMP [42000-224]
-; bad SQL grammar []
-[ERROR]   CameraResultMapperTest.findAll_shouldReturnAllResults:93 ? DataIntegrityViolation 
-### Error updating database.  Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FC: PUBLIC.CAMERA_RESULTS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO camera_results (
-            record_id, camera_code, camera_name, status, quality_score,
-            screenshot_path, error_message, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?,
-            ?, ?, ?
-        ) [23506-224]
-### The error may exist in file [D:\gkproject\camera-inspection3.0\enviro-brain\target\classes\mapper\CameraResultMapper.xml]
-### The error may involve com.enviro.brain.mapper.CameraResultMapper.insert-Inline
-### The error occurred while setting parameters
-### SQL: INSERT INTO camera_results (             record_id, camera_code, camera_name, status, quality_score,             screenshot_path, error_message, sync_version         ) VALUES (             ?, ?, ?, ?, ?,             ?, ?, ?         )
-### Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FC: PUBLIC.CAMERA_RESULTS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO camera_results (
-            record_id, camera_code, camera_name, status, quality_score,
-            screenshot_path, error_message, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?,
-            ?, ?, ?
-        ) [23506-224]
-; Referential integrity constraint violation: "CONSTRAINT_FC: PUBLIC.CAMERA_RESULTS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO camera_results (
-            record_id, camera_code, camera_name, status, quality_score,
-            screenshot_path, error_message, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?,
-            ?, ?, ?
-        ) [23506-224]
-[ERROR]   CameraResultMapperTest.findById_shouldReturnResult:48 ? DataIntegrityViolation 
-### Error updating database.  Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FC: PUBLIC.CAMERA_RESULTS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO camera_results (
-            record_id, camera_code, camera_name, status, quality_score,
-            screenshot_path, error_message, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?,
-            ?, ?, ?
-        ) [23506-224]
-### The error may exist in file [D:\gkproject\camera-inspection3.0\enviro-brain\target\classes\mapper\CameraResultMapper.xml]
-### The error may involve com.enviro.brain.mapper.CameraResultMapper.insert-Inline
-### The error occurred while setting parameters
-### SQL: INSERT INTO camera_results (             record_id, camera_code, camera_name, status, quality_score,             screenshot_path, error_message, sync_version         ) VALUES (             ?, ?, ?, ?, ?,             ?, ?, ?         )
-### Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FC: PUBLIC.CAMERA_RESULTS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO camera_results (
-            record_id, camera_code, camera_name, status, quality_score,
-            screenshot_path, error_message, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?,
-            ?, ?, ?
-        ) [23506-224]
-; Referential integrity constraint violation: "CONSTRAINT_FC: PUBLIC.CAMERA_RESULTS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO camera_results (
-            record_id, camera_code, camera_name, status, quality_score,
-            screenshot_path, error_message, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?,
-            ?, ?, ?
-        ) [23506-224]
-[ERROR]   CameraResultMapperTest.findByRecordId_shouldReturnResults:64 ? DataIntegrityViolation 
-### Error updating database.  Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FC: PUBLIC.CAMERA_RESULTS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(999 AS BIGINT))"; SQL statement:
-INSERT INTO camera_results (
-            record_id, camera_code, camera_name, status, quality_score,
-            screenshot_path, error_message, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?,
-            ?, ?, ?
-        ) [23506-224]
-### The error may exist in file [D:\gkproject\camera-inspection3.0\enviro-brain\target\classes\mapper\CameraResultMapper.xml]
-### The error may involve com.enviro.brain.mapper.CameraResultMapper.insert-Inline
-### The error occurred while setting parameters
-### SQL: INSERT INTO camera_results (             record_id, camera_code, camera_name, status, quality_score,             screenshot_path, error_message, sync_version         ) VALUES (             ?, ?, ?, ?, ?,             ?, ?, ?         )
-### Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FC: PUBLIC.CAMERA_RESULTS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(999 AS BIGINT))"; SQL statement:
-INSERT INTO camera_results (
-            record_id, camera_code, camera_name, status, quality_score,
-            screenshot_path, error_message, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?,
-            ?, ?, ?
-        ) [23506-224]
-; Referential integrity constraint violation: "CONSTRAINT_FC: PUBLIC.CAMERA_RESULTS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(999 AS BIGINT))"; SQL statement:
-INSERT INTO camera_results (
-            record_id, camera_code, camera_name, status, quality_score,
-            screenshot_path, error_message, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?,
-            ?, ?, ?
-        ) [23506-224]
-[ERROR]   CameraResultMapperTest.insert_shouldGenerateId:33 ? DataIntegrityViolation 
-### Error updating database.  Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FC: PUBLIC.CAMERA_RESULTS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO camera_results (
-            record_id, camera_code, camera_name, status, quality_score,
-            screenshot_path, error_message, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?,
-            ?, ?, ?
-        ) [23506-224]
-### The error may exist in file [D:\gkproject\camera-inspection3.0\enviro-brain\target\classes\mapper\CameraResultMapper.xml]
-### The error may involve com.enviro.brain.mapper.CameraResultMapper.insert-Inline
-### The error occurred while setting parameters
-### SQL: INSERT INTO camera_results (             record_id, camera_code, camera_name, status, quality_score,             screenshot_path, error_message, sync_version         ) VALUES (             ?, ?, ?, ?, ?,             ?, ?, ?         )
-### Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FC: PUBLIC.CAMERA_RESULTS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO camera_results (
-            record_id, camera_code, camera_name, status, quality_score,
-            screenshot_path, error_message, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?,
-            ?, ?, ?
-        ) [23506-224]
-; Referential integrity constraint violation: "CONSTRAINT_FC: PUBLIC.CAMERA_RESULTS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO camera_results (
-            record_id, camera_code, camera_name, status, quality_score,
-            screenshot_path, error_message, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?,
-            ?, ?, ?
-        ) [23506-224]
-[ERROR]   LedgerRecordMapperTest.findAll_shouldReturnAllRecords:82 ? DataIntegrityViolation 
-### Error updating database.  Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FB5: PUBLIC.LEDGER_RECORDS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO ledger_records (
-            record_id, inspection_date, content, docx_path, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        ) [23506-224]
-### The error may exist in file [D:\gkproject\camera-inspection3.0\enviro-brain\target\classes\mapper\LedgerRecordMapper.xml]
-### The error may involve com.enviro.brain.mapper.LedgerRecordMapper.insert-Inline
-### The error occurred while setting parameters
-### SQL: INSERT INTO ledger_records (             record_id, inspection_date, content, docx_path, sync_version         ) VALUES (             ?, ?, ?, ?, ?         )
-### Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FB5: PUBLIC.LEDGER_RECORDS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO ledger_records (
-            record_id, inspection_date, content, docx_path, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        ) [23506-224]
-; Referential integrity constraint violation: "CONSTRAINT_FB5: PUBLIC.LEDGER_RECORDS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO ledger_records (
-            record_id, inspection_date, content, docx_path, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        ) [23506-224]
-[ERROR]   LedgerRecordMapperTest.findById_shouldReturnRecord:42 ? DataIntegrityViolation 
-### Error updating database.  Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FB5: PUBLIC.LEDGER_RECORDS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO ledger_records (
-            record_id, inspection_date, content, docx_path, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        ) [23506-224]
-### The error may exist in file [D:\gkproject\camera-inspection3.0\enviro-brain\target\classes\mapper\LedgerRecordMapper.xml]
-### The error may involve com.enviro.brain.mapper.LedgerRecordMapper.insert-Inline
-### The error occurred while setting parameters
-### SQL: INSERT INTO ledger_records (             record_id, inspection_date, content, docx_path, sync_version         ) VALUES (             ?, ?, ?, ?, ?         )
-### Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FB5: PUBLIC.LEDGER_RECORDS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO ledger_records (
-            record_id, inspection_date, content, docx_path, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        ) [23506-224]
-; Referential integrity constraint violation: "CONSTRAINT_FB5: PUBLIC.LEDGER_RECORDS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO ledger_records (
-            record_id, inspection_date, content, docx_path, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        ) [23506-224]
-[ERROR]   LedgerRecordMapperTest.findByRecordId_shouldReturnRecords:56 ? DataIntegrityViolation 
-### Error updating database.  Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FB5: PUBLIC.LEDGER_RECORDS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(888 AS BIGINT))"; SQL statement:
-INSERT INTO ledger_records (
-            record_id, inspection_date, content, docx_path, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        ) [23506-224]
-### The error may exist in file [D:\gkproject\camera-inspection3.0\enviro-brain\target\classes\mapper\LedgerRecordMapper.xml]
-### The error may involve com.enviro.brain.mapper.LedgerRecordMapper.insert-Inline
-### The error occurred while setting parameters
-### SQL: INSERT INTO ledger_records (             record_id, inspection_date, content, docx_path, sync_version         ) VALUES (             ?, ?, ?, ?, ?         )
-### Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FB5: PUBLIC.LEDGER_RECORDS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(888 AS BIGINT))"; SQL statement:
-INSERT INTO ledger_records (
-            record_id, inspection_date, content, docx_path, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        ) [23506-224]
-; Referential integrity constraint violation: "CONSTRAINT_FB5: PUBLIC.LEDGER_RECORDS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(888 AS BIGINT))"; SQL statement:
-INSERT INTO ledger_records (
-            record_id, inspection_date, content, docx_path, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        ) [23506-224]
-[ERROR]   LedgerRecordMapperTest.insert_shouldGenerateId:29 ? DataIntegrityViolation 
-### Error updating database.  Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FB5: PUBLIC.LEDGER_RECORDS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO ledger_records (
-            record_id, inspection_date, content, docx_path, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        ) [23506-224]
-### The error may exist in file [D:\gkproject\camera-inspection3.0\enviro-brain\target\classes\mapper\LedgerRecordMapper.xml]
-### The error may involve com.enviro.brain.mapper.LedgerRecordMapper.insert-Inline
-### The error occurred while setting parameters
-### SQL: INSERT INTO ledger_records (             record_id, inspection_date, content, docx_path, sync_version         ) VALUES (             ?, ?, ?, ?, ?         )
-### Cause: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FB5: PUBLIC.LEDGER_RECORDS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO ledger_records (
-            record_id, inspection_date, content, docx_path, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        ) [23506-224]
-; Referential integrity constraint violation: "CONSTRAINT_FB5: PUBLIC.LEDGER_RECORDS FOREIGN KEY(RECORD_ID) REFERENCES PUBLIC.INSPECTION_RECORDS(ID) (CAST(1 AS BIGINT))"; SQL statement:
-INSERT INTO ledger_records (
-            record_id, inspection_date, content, docx_path, sync_version
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        ) [23506-224]
-[ERROR]   SyncVersionMapperTest.nextVersion_shouldBeMonotonicallyIncreasing:37 ? BadSqlGrammar 
-### Error querying database.  Cause: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE sync_version_seq\000a        SET next_val = next_val + 1\000a        WHERE id = 1\000a        [*]RETURNING next_val;"; SQL statement:
-UPDATE sync_version_seq
-        SET next_val = next_val + 1
-        WHERE id = 1
-        RETURNING next_val; [42000-224]
-### The error may exist in file [D:\gkproject\camera-inspection3.0\enviro-brain\target\classes\mapper\SyncVersionMapper.xml]
-### The error may involve com.enviro.brain.mapper.SyncVersionMapper.nextVersion
-### The error occurred while executing a query
-### SQL: UPDATE sync_version_seq         SET next_val = next_val + 1         WHERE id = 1         RETURNING next_val;
-### Cause: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE sync_version_seq\000a        SET next_val = next_val + 1\000a        WHERE id = 1\000a        [*]RETURNING next_val;"; SQL statement:
-UPDATE sync_version_seq
-        SET next_val = next_val + 1
-        WHERE id = 1
-        RETURNING next_val; [42000-224]
-; bad SQL grammar []
-[ERROR]   SyncVersionMapperTest.nextVersion_shouldIncrementAtomically:20 ? BadSqlGrammar 
-### Error querying database.  Cause: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE sync_version_seq\000a        SET next_val = next_val + 1\000a        WHERE id = 1\000a        [*]RETURNING next_val;"; SQL statement:
-UPDATE sync_version_seq
-        SET next_val = next_val + 1
-        WHERE id = 1
-        RETURNING next_val; [42000-224]
-### The error may exist in file [D:\gkproject\camera-inspection3.0\enviro-brain\target\classes\mapper\SyncVersionMapper.xml]
-### The error may involve com.enviro.brain.mapper.SyncVersionMapper.nextVersion
-### The error occurred while executing a query
-### SQL: UPDATE sync_version_seq         SET next_val = next_val + 1         WHERE id = 1         RETURNING next_val;
-### Cause: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE sync_version_seq\000a        SET next_val = next_val + 1\000a        WHERE id = 1\000a        [*]RETURNING next_val;"; SQL statement:
-UPDATE sync_version_seq
-        SET next_val = next_val + 1
-        WHERE id = 1
-        RETURNING next_val; [42000-224]
-; bad SQL grammar []
+[ERROR]   SyncVersionMapperTest.nextVersion_shouldIncrementAtomically:21 
+expected: 1L
+ but was: 2L
 [INFO] 
-[ERROR] Tests run: 35, Failures: 3, Errors: 12, Skipped: 0
+[ERROR] Tests run: 35, Failures: 1, Errors: 0, Skipped: 0
 [INFO] 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  14.957 s
-[INFO] Finished at: 2026-07-06T11:49:00+08:00
+[INFO] Total time:  13.497 s
+[INFO] Finished at: 2026-07-06T11:52:18+08:00
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.2.5:test (default-test) on project enviro-brain: There are test failures.
 [ERROR] 
