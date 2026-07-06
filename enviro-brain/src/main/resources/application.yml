@@ -11,6 +11,30 @@ server:
 enviro:
   api:
     key: dev-api-key-2026
+  hikvision:
+    host: ${HIKVISION_HOST:}
+    port: 443
+    app-key: ${HIKVISION_APP_KEY:}
+    app-secret: ${HIKVISION_APP_SECRET:}
+    api-path: /artemis
+    timeout: 15
+    retry-count: 3
+    warmup-seconds: 5.0
+  python:
+    path: python3
+    script-path: scripts/camera_capture.py
+  screenshots:
+    dir: ./screenshots
+  ledger:
+    dir: ./ledger
+    template-path: templates/危废仓库巡查台账_新模版.docx
+  feishu:
+    webhook-url: ${FEISHU_WEBHOOK_URL:}
+  queqiao:
+    callback-url: ${QUEQIAO_CALLBACK_URL:}
+  inspection:
+    concurrency: 4
+    capture-timeout-seconds: 60
 
 # MyBatis 配置
 mybatis:
