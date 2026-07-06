@@ -28,10 +28,10 @@
 
 ## 4. API Key 认证 (enviro-brain)
 
-- [ ] 4.1 创建 ApiKeyAuthInterceptor 拦截器类
-- [ ] 4.2 实现 preHandle：校验 X-API-Key 头，白名单放行 /actuator/health、/error
-- [ ] 4.3 创建 WebMvcConfig，注册拦截器到 /api/** 路径
-- [ ] 4.4 编写单元测试验证拦截逻辑
+- [x] 4.1 创建 ApiKeyAuthInterceptor 拦截器类（构造注入 apiKey）
+- [x] 4.2 实现 preHandle：校验 X-API-Key 头，白名单放行 /actuator/health、/error
+- [x] 4.3 创建 WebMvcConfig，注册拦截器到 /api/** 路径（@Value 注入 + @Bean 创建）
+- [x] 4.4 编写单元测试验证拦截逻辑（5 unit + 3 integration = 8 tests PASS）
 
 ## 5. SyncVersion 服务 + 全局 ApiResponse (enviro-brain)
 
