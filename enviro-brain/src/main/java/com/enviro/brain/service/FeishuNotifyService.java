@@ -28,6 +28,7 @@ public class FeishuNotifyService {
 
         try {
             String cardJson = buildCardJson(record, results);
+            log.info("[FeishuNotify] 发送JSON: {}", cardJson);
             HttpHeaders headers = new HttpHeaders();
             headers.setContentType(MediaType.APPLICATION_JSON);
             HttpEntity<String> entity = new HttpEntity<>(cardJson, headers);
@@ -50,13 +51,18 @@ public class FeishuNotifyService {
         int abnormal = record.getAbnormalCount() != null ? record.getAbnormalCount()
                 : (int) results.stream().filter(r -> "abnormal".equals(r.getStatus())).count();
 
-        String detail = results.stream()
-                .filter(r -> !"online".equals(r.getStatus()))
-                .map(r -> "- " + r.getCameraName() + "：" + r.getStatus()
-                        + (r.getErrorMessage() != null ? "（" + r.getErrorMessage() + "）" : ""))
-                .collect(Collectors.joining("\\n"));
-
-        if (detail.isEmpty()) detail = "无";
+        StringBuilder detail = new StringBuilder();
+        for (CameraResult r : results) {
+            if ("online".equals(r.getStatus())) continue;
+            if (detail.length() > 0) detail.append("\\n");  // JSON 字面 "\n"，飞书渲染为换行
+            String err = r.getErrorMessage() != null ? r.getErrorMessage() : "";
+            // 截断+清洗：移除换行（飞书卡片 markdown 不会显示多行错误），避免 JSON 转义混乱
+            err = err.replace("\n", " ").replace("\r", " ");
+            if (err.length() > 80) err = err.substring(0, 80) + "...";
+            detail.append("- ").append(r.getCameraName()).append("：").append(r.getStatus());
+            if (!err.isEmpty()) detail.append("（").append(err).append("）");
+        }
+        String detailStr = detail.length() == 0 ? "无" : detail.toString();
 
         return "{"
                 + "\"msg_type\":\"interactive\","
@@ -67,7 +73,7 @@ public class FeishuNotifyService {
                 + "{\"tag\":\"div\",\"text\":{\"tag\":\"lark_md\",\"content\":\"**概况**：总 " + total
                 + " 路\\n🟢 在线 " + online + "\\n🔴 离线 " + offline + "\\n🟡 异常 " + abnormal + "\"}},"
                 + "{\"tag\":\"hr\"},"
-                + "{\"tag\":\"div\",\"text\":{\"tag\":\"lark_md\",\"content\":\"**离线/异常详情**：\\n" + detail + "\"}},"
+                + "{\"tag\":\"div\",\"text\":{\"tag\":\"lark_md\",\"content\":\"**离线/异常详情**：\\n" + detailStr + "\"}},"
                 + "{\"tag\":\"note\",\"elements\":[{\"tag\":\"plain_text\",\"content\":\"环保小脑自动巡检 " + time + "\"}]}"
                 + "]}}";
     }

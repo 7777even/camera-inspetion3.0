@@ -42,7 +42,7 @@ public class InspectionService {
         log.info("[Inspection] 开始执行巡检，触发类型：{}", triggerType);
 
         // ① 读取启用的摄像头清单
-        List<CameraConfig> cameras = cameraConfigService.findActive(0, 10000);
+        List<CameraConfig> cameras = cameraConfigService.findActive(1, 10000);
         log.info("[Inspection] 共读取 {} 路摄像头", cameras.size());
 
         // ② 获取全局同步版本号
