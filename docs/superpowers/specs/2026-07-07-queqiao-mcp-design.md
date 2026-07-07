@@ -33,7 +33,8 @@
 ```
 脑机桌面端 ──HTTPS──> 外部网关(Bearer 令牌) ──> 鹊桥 queqiao :8081
                                                 │
-                          /mcp/enviro-inspection  (MCP Streamable HTTP 传输)
+                          /mcp/sse  (GET, SSE 流)  +  /mcp/message  (POST, JSON-RPC 消息)
+                          (MCP SSE 传输，由 WebMvcSseServerTransportProvider 以 functional RouterFunction 注册)
                                                 │
                      EnviroInspectionMcpTools  (5 个 @Tool 方法)
                         ├─ 查询类 → EnviroInspectionQueryService → 已有 Mapper → synced_* 库
@@ -44,8 +45,8 @@
                                     ApiKeyAuthInterceptor / application.yml(enviro-brain.*)
 ```
 
-- 传输：**Streamable HTTP（SSE）**，端点 `/mcp/enviro-inspection`，与现有 `/api/notify` 共存于 8081。
-- 框架：**Spring AI MCP**，`spring-ai-mcp-server-webmvc-spring-boot-starter`（1.0.x，兼容 Spring Boot 3.3.5 / Java 17）。
+- 传输：**SSE（WebMvcSseServerTransportProvider）**。实际解析依赖为 **Spring AI 1.0.0 + MCP Java SDK 0.10.0**，其 `spring-webmvc` 模块仅支持 SSE 服务端传输，**不支持 streamable-http**。端点为 `GET /mcp/sse`（SSE 流，建立会话）与 `POST /mcp/message`（JSON-RPC 消息，带 `?sessionId=xxx`），与现有 `/api/notify` 共存于 8081。注意：SDK 0.10.0 中 `base-url` 不会前缀到路由路径上。
+- 框架：**Spring AI MCP**，`spring-ai-starter-mcp-server-webmvc`（1.0.0 GA，兼容 Spring Boot 3.3.5 / Java 17）。
 - MCP 端点自身鉴权：默认**开放**（外部网关已做 Bearer 校验）；预留可选 `McpAuthInterceptor`（API-Key / Bearer），默认关闭，可配置开启。
 
 ---
@@ -105,7 +106,7 @@
 ### 修改文件
 | 文件 | 变更 |
 |------|------|
-| `src/main/resources/application.yml` | 增加 `spring.ai.mcp.server`（`enabled`、`base-url`/path、`transport=streamable-http`）；`queqiao.mcp.auth.enabled`（默认 false） |
+| `src/main/resources/application.yml` | 增加 `spring.ai.mcp.server`（`enabled`、`transport=WEBMVC`(SSE)、`sse-endpoint=/mcp/sse`、`sse-message-endpoint=/mcp/message`）；`queqiao.mcp.auth.enabled`（默认 false） |
 | `src/main/resources/application-dev.yml` | 本地 MCP 调试端口/路径（沿用 8081） |
 | 对应 `*Mapper.xml` | 新增 read 方法 SQL（H2 兼容：`NOW()`→`CURRENT_TIMESTAMP`、`ON DUPLICATE`→`MERGE INTO`，遵循 Phase 3 已验证写法） |
 
@@ -139,7 +140,7 @@
 3. **MCP 集成测试（关键，验证协议层）**
    - `EnviroInspectionMcpIntegrationTest`：用 Spring AI `McpClient` + 测试传输（in-process / direct），真实走 `initialize → tools/list → tools/call get_inspection_ledger`，断言返回结构与字段；并验证 `tools/list` 返回 5 个工具。
 4. **不依赖**真实环保小脑（ForwardService 用 mock）/ 真实脑机端。
-5. **文档**：`docs/` 下新增「Phase 4 本地手动冒烟步骤」，留给 Phase 5 真机联调参考（启动 8081 → 用 MCP 客户端连 `/mcp/enviro-inspection` → 调用 5 个工具）。
+5. **文档**：`docs/` 下新增「Phase 4 本地手动冒烟步骤」，留给 Phase 5 真机联调参考（启动 8081 → 用 MCP SSE 客户端连 `http://<host>:8081/mcp/sse` → 调用 5 个工具）。
 
 > 目标：Phase 4 结束时 `mvn test`（经 maven-windows-build 流程）全绿，新增测试与 Phase 3 的 21 个测试共存不冲突。
 
@@ -154,15 +155,17 @@
       mcp:
         server:
           enabled: true
-          base-url: /mcp
-          transport: streamable-http   # 端点 /mcp/enviro-inspection
+          base-url: /mcp/enviro-inspection
+          transport: WEBMVC            # SSE 传输；端点 GET /mcp/sse 与 POST /mcp/message
+          sse-endpoint: /mcp/sse
+          sse-message-endpoint: /mcp/message
   queqiao:
     mcp:
       auth:
         enabled: false                 # 默认开放，网关已做 Bearer
   ```
-- 端点 `/mcp/enviro-inspection` 与 `/api/notify` 同进程共存，端口 8081。
-- 脑机端接入配置（方案 11.1）不变：`mcpServers.enviro-inspection.url = https://<网关>/mcp/enviro-inspection` + `Authorization: Bearer <令牌>`。
+- 端点 `GET /mcp/sse` 与 `POST /mcp/message` 与 `/api/notify` 同进程共存，端口 8081。
+- 脑机端接入配置（方案 11.1）调整：`mcpServers.enviro-inspection.url = https://<网关>/mcp/sse` + `Authorization: Bearer <令牌>`（SSE 传输的客户端连 SSE 流地址；`base-url` 在 SDK 0.10.0 仅用于 SSE 会话上下文，不前缀到路由）。
 
 ---
 
@@ -177,7 +180,7 @@
 
 ## 11. 已决议事项（来自澄清）
 
-- Q1 落地方式：**嵌入 queqiao 应用**（Spring AI MCP，webmvc/Streamable HTTP，`/mcp/enviro-inspection`，复用 DB+service）。
+- Q1 落地方式：**嵌入 queqiao 应用**（Spring AI MCP，webmvc/SSE，`/mcp/sse` + `/mcp/message`，复用 DB+service）。
 - Q2 验收口径：**代码 + 集成测试全绿**；真实联调留 Phase 5。
 - 工具集：**5 个**（3 查询 + 2 操作），与方案 v3.0 七/九节一致。
 - 操作类转发：复用 `RestTemplateConfig` + `enviro-brain.api-key` 凭证。
