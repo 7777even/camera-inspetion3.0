@@ -56,5 +56,6 @@ class EnviroInspectionForwardServiceTest {
 
         Map<String, Object> result = service.downloadLedgerDocx(10L);
         assertThat(result.get("ok")).isEqualTo(false);
+        assertThat(result.get("message").toString()).contains("环保小脑暂不可用");
     }
 }

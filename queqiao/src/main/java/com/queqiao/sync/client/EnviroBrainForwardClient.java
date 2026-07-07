@@ -50,7 +50,8 @@ public class EnviroBrainForwardClient {
             ResponseEntity<ApiResponse<TriggerResultDto>> resp = restTemplate.exchange(
                     URI.create(baseUrl + "/api/v1/inspections/trigger"),
                     HttpMethod.POST, new HttpEntity<>(body, headers), TRIGGER_TYPE);
-            if (!resp.getStatusCode().is2xxSuccessful() || resp.getBody() == null) {
+            if (!resp.getStatusCode().is2xxSuccessful() || resp.getBody() == null
+                    || resp.getBody().getData() == null) {
                 throw new SyncClientException("触发巡检失败: " + resp.getStatusCode());
             }
             return resp.getBody().getData();
@@ -67,7 +68,8 @@ public class EnviroBrainForwardClient {
             ResponseEntity<ApiResponse<DownloadResultDto>> resp = restTemplate.exchange(
                     URI.create(baseUrl + "/api/v1/ledger/" + inspectId + "/download"),
                     HttpMethod.GET, new HttpEntity<>(headers), DOWNLOAD_TYPE);
-            if (!resp.getStatusCode().is2xxSuccessful() || resp.getBody() == null) {
+            if (!resp.getStatusCode().is2xxSuccessful() || resp.getBody() == null
+                    || resp.getBody().getData() == null) {
                 throw new SyncClientException("下载台账失败: " + resp.getStatusCode());
             }
             return resp.getBody().getData();
