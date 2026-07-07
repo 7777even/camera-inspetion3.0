@@ -8,6 +8,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
+
 /**
  * MCP 端点可选鉴权拦截器。
  * 默认关闭（{@code queqiao.mcp.auth.enabled=false}），关闭时直接放行，不影响 Phase 4 联调；
@@ -30,11 +33,18 @@ public class McpAuthInterceptor implements HandlerInterceptor {
             return true; // 默认开放
         }
         String key = request.getHeader("X-API-Key");
-        if (apiKey != null && !apiKey.isBlank() && apiKey.equals(key)) {
+        if (apiKey != null && !apiKey.isBlank() && constantTimeEquals(apiKey, key)) {
             return true;
         }
         log.warn("[mcp-auth] MCP 端点鉴权失败，远程地址={}", request.getRemoteAddr());
         response.setStatus(HttpStatus.UNAUTHORIZED.value());
         return false;
+    }
+
+    /** 常量时间比较 API Key，避免时序侧信道 */
+    private boolean constantTimeEquals(String a, String b) {
+        byte[] ab = a.getBytes(StandardCharsets.UTF_8);
+        byte[] bb = (b == null) ? new byte[0] : b.getBytes(StandardCharsets.UTF_8);
+        return MessageDigest.isEqual(ab, bb);
     }
 }

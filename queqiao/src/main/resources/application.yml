@@ -10,9 +10,13 @@ spring:
         # SSE 传输（WebMvcSseServerTransportProvider），不支持 streamable-http 服务端传输；
         # transport 合法取值为 WEBMVC / WEBFLUX（非 streamable-http），故此处使用 WEBMVC(SSE)。
         # 在 0.10.0 中，SSE 端点以 functional RouterFunction 注册，路由路径 = sse-endpoint /
-        # sse-message-endpoint 本身（base-url 不会前缀到路由上，仅用于 SSE 会话上下文）。
-        # 因此最终端点为：GET {sse-endpoint}（SSE 流）、POST {sse-message-endpoint}（JSON-RPC 消息）。
-        base-url: /mcp/enviro-inspection
+        # sse-message-endpoint 本身（base-url 仅用于拼装 endpoint 事件下发的相对路径，
+        # 不会前缀到路由上）。因此最终端点为：GET {sse-endpoint}（SSE 流）、
+        # POST {base-url}{sse-message-endpoint}?sessionId=xxx（JSON-RPC 消息）。
+        # 注：base-url 必须为空字符串，否则 endpoint 事件下发的 POST 路径与实际 RouterFunction
+        # 路由不一致，会导致客户端 POST 到 404 路径，握手失败（MCP SDK 0.10.0 + Spring AI 1.0.0
+        # 已知行为，参见 .workbuddy/memory/2026-07-07.md）。
+        base-url: ""
         transport: WEBMVC
         sse-endpoint: /mcp/sse
         sse-message-endpoint: /mcp/message

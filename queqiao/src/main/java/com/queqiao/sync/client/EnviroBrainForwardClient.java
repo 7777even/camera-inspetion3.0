@@ -58,6 +58,8 @@ public class EnviroBrainForwardClient {
             return resp.getBody().getData();
         } catch (RestClientException | HttpMessageConversionException e) {
             throw new SyncClientException("触发巡检调用失败", e);
+        } catch (RuntimeException e) {
+            throw new SyncClientException("触发巡检调用异常", e);
         }
     }
 
@@ -76,6 +78,8 @@ public class EnviroBrainForwardClient {
             return resp.getBody().getData();
         } catch (RestClientException | HttpMessageConversionException e) {
             throw new SyncClientException("下载台账调用失败", e);
+        } catch (RuntimeException e) {
+            throw new SyncClientException("下载台账调用异常", e);
         }
     }
 }

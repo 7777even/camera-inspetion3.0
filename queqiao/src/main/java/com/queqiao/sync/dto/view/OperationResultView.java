@@ -2,6 +2,7 @@ package com.queqiao.sync.dto.view;
 
 import lombok.Data;
 
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
@@ -33,7 +34,11 @@ public class OperationResultView {
         Object ok = m.get("ok");
         v.setOk(ok instanceof Boolean ? (Boolean) ok : null);
         v.setMessage((String) m.get("message"));
-        v.setData(m);
+        // data 仅承载业务字段，避免与顶层 ok/message 冗余嵌套
+        Map<String, Object> data = new LinkedHashMap<>(m);
+        data.remove("ok");
+        data.remove("message");
+        v.setData(data);
         return v;
     }
 }

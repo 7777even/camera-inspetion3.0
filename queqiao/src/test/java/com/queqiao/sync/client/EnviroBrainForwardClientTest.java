@@ -70,4 +70,25 @@ class EnviroBrainForwardClientTest {
         assertThatThrownBy(() -> client.downloadLedgerDocx(10L))
                 .isInstanceOf(SyncClientException.class);
     }
+
+    /** base-url 配置畸形导致 URI.create 抛 IllegalArgumentException 等非 RestClientException 异常时，也应降级为 SyncClientException */
+    @Test
+    void triggerInspection_throwsWhenBaseUrlMalformed() {
+        RestTemplate rt = new RestTemplate();
+        MockRestServiceServer.bindTo(rt).build();
+        EnviroBrainForwardClient client = new EnviroBrainForwardClient(rt, "http://[invalid", API_KEY);
+
+        assertThatThrownBy(() -> client.triggerInspection("手动触发"))
+                .isInstanceOf(SyncClientException.class);
+    }
+
+    @Test
+    void downloadLedgerDocx_throwsWhenBaseUrlMalformed() {
+        RestTemplate rt = new RestTemplate();
+        MockRestServiceServer.bindTo(rt).build();
+        EnviroBrainForwardClient client = new EnviroBrainForwardClient(rt, "http://[invalid", API_KEY);
+
+        assertThatThrownBy(() -> client.downloadLedgerDocx(10L))
+                .isInstanceOf(SyncClientException.class);
+    }
 }

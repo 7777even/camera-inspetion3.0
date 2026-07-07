@@ -148,14 +148,14 @@
 
 ## 9. 配置 & 部署
 
-- `application.yml` 新增（示意）：
+- `application.yml` 新增（示意，最终值见 queqiao/src/main/resources/application.yml）：
   ```yaml
   spring:
     ai:
       mcp:
         server:
           enabled: true
-          base-url: /mcp/enviro-inspection
+          base-url: ""                   # 必须为空！否则 endpoint 事件下发的 POST 路径与 RouterFunction 注册路径不一致，导致握手失败
           transport: WEBMVC            # SSE 传输；端点 GET /mcp/sse 与 POST /mcp/message
           sse-endpoint: /mcp/sse
           sse-message-endpoint: /mcp/message
@@ -165,7 +165,8 @@
         enabled: false                 # 默认开放，网关已做 Bearer
   ```
 - 端点 `GET /mcp/sse` 与 `POST /mcp/message` 与 `/api/notify` 同进程共存，端口 8081。
-- 脑机端接入配置（方案 11.1）调整：`mcpServers.enviro-inspection.url = https://<网关>/mcp/sse` + `Authorization: Bearer <令牌>`（SSE 传输的客户端连 SSE 流地址；`base-url` 在 SDK 0.10.0 仅用于 SSE 会话上下文，不前缀到路由）。
+- 脑机端接入配置（方案 11.1）调整：`mcpServers.enviro-inspection.url = https://<网关>/mcp/sse` + `Authorization: Bearer <令牌>`（SSE 传输的客户端连 SSE 流地址）。
+- **重要约束**（MCP Java SDK 0.10.0 + Spring AI 1.0.0 行为）：SSE 端点用 functional RouterFunction 注册，路由路径就是 `sse-endpoint` / `sse-message-endpoint` 本身，不加任何前缀。`base-url` 仅用于在 endpoint 事件中拼装客户端 POST 的相对路径（拼装公式 `baseUrl + sseMessageEndpoint + "?sessionId=" + sessionId`）。如果 `base-url` 非空，客户端 POST 会落到与 RouterFunction 注册的 POST 路由不同的路径，握手失败（已通过线缆级集成测试 `EnviroInspectionMcpWireIntegrationTest` 验证）。
 
 ---
 

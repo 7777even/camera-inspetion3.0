@@ -157,8 +157,10 @@ spring:
       server:
         enabled: true
         # SSE 传输（WebMvcSseServerTransportProvider）；端点 GET /mcp/sse + POST /mcp/message
-        # 注意：MCP SDK 0.10.0 的 base-url 不前缀到路由路径，仅用于 SSE 会话上下文
-        base-url: /mcp/enviro-inspection
+        # base-url 必须为空字符串：endpoint 事件下发的 POST 路径 = base-url + sse-message-endpoint
+        # + ?sessionId=xxx；如果 base-url 非空，会与 RouterFunction 注册的 POST 路径错位，
+        # 客户端 POST 落到 404，握手失败（MCP SDK 0.10.0 + Spring AI 1.0.0 已知行为）
+        base-url: ""
         transport: WEBMVC
 
 queqiao:
