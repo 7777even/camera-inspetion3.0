@@ -92,8 +92,7 @@ public class CaptureService {
         cmd.add("--camera-name"); cmd.add(config.getCameraName() != null ? config.getCameraName() : "");
         cmd.add("--save-dir"); cmd.add(screenshotsDir);
         cmd.add("--timeout"); cmd.add(String.valueOf(hikvisionTimeout));
-        cmd.add("--retry-count"); cmd.add(String.valueOf(hikvisionRetryCount));
-        cmd.add("--warmup"); cmd.add(String.valueOf(hikvisionWarmupSeconds));
+        cmd.add("--retry"); cmd.add(String.valueOf(hikvisionRetryCount));
         cmd.add("--api-path"); cmd.add(hikvisionApiPath);
         cmd.add("--json");
         if (config.getArtemisDeviceId() != null && !config.getArtemisDeviceId().isEmpty()) {
