@@ -2,6 +2,13 @@
 spring:
   profiles:
     active: dev
+  ai:
+    mcp:
+      server:
+        enabled: true
+        # Streamable HTTP 端点基路径，最终暴露为 /mcp/enviro-inspection
+        base-url: /mcp/enviro-inspection
+        transport: streamable-http
 
 server:
   port: 8081
@@ -21,6 +28,10 @@ queqiao:
   notify:
     # 接收环保小脑回调通知时校验的 API Key
     api-key: ${QUEQIAO_NOTIFY_API_KEY:queqiao-notify-key-2026}
+  mcp:
+    # MCP 端点自身鉴权：默认关闭（外部网关已做 Bearer 校验）
+    auth:
+      enabled: false
 
 # MyBatis 配置
 mybatis:
