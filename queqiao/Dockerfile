@@ -6,7 +6,6 @@ COPY pom.xml .
 RUN mvn dependency:resolve
 
 COPY src ./src
-COPY templates ./templates
 RUN mvn package -DskipTests
 
 # Stage 2: 运行
@@ -14,8 +13,6 @@ FROM eclipse-temurin:17-jre
 WORKDIR /app
 
 COPY --from=build /app/target/queqiao-*.jar app.jar
-
-# 健康检查
 HEALTHCHECK --interval=30s --timeout=5s --retries=3 \
   CMD curl -s http://localhost:8081/actuator/health | grep UP || exit 1
 
