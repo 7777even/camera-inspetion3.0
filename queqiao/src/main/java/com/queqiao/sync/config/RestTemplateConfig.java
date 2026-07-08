@@ -1,5 +1,6 @@
 package com.queqiao.sync.config;
 
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.fasterxml.jackson.databind.SerializationFeature;
@@ -23,6 +24,8 @@ public class RestTemplateConfig {
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.registerModule(new JavaTimeModule());
         objectMapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
+        // 环保小脑响应字段可能新增（如 status），禁用未知属性失败以保证客户端健壮
+        objectMapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
 
         restTemplate.getMessageConverters().stream()
                 .filter(c -> c instanceof MappingJackson2HttpMessageConverter)
