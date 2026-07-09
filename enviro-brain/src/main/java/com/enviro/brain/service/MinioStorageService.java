@@ -7,6 +7,7 @@ import io.minio.MinioClient;
 import io.minio.PutObjectArgs;
 import io.minio.RemoveObjectsArgs;
 import io.minio.Result;
+import io.minio.messages.DeleteError;
 import io.minio.messages.DeleteObject;
 import io.minio.messages.Item;
 import lombok.extern.slf4j.Slf4j;
@@ -168,7 +169,17 @@ public class MinioStorageService {
         List<DeleteObject> objs = keys.stream()
                 .map(DeleteObject::new)
                 .collect(java.util.stream.Collectors.toList());
-        minioClient.removeObjects(RemoveObjectsArgs.builder().bucket(bucket).objects(objs).build());
+        // removeObjects 返回惰性迭代器：实际删除请求仅在遍历结果时才会真正发出。
+        // 若不消费该 iterable，生产中不会执行任何删除（清理功能静默失效）。
+        Iterable<Result<DeleteError>> results = minioClient.removeObjects(
+                RemoveObjectsArgs.builder().bucket(bucket).objects(objs).build());
+        for (Result<DeleteError> r : results) {
+            try {
+                r.get(); // 触发真实删除；删除失败时抛出异常
+            } catch (Exception e) {
+                log.error("[Minio] 删除单个过期对象失败: {}", e.getMessage(), e);
+            }
+        }
     }
 
     /** 编排：cleanup.enabled=false 直接返回 0；否则列出->选过期->删除，返回删除数量。 */

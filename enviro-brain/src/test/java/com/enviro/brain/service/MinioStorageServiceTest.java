@@ -14,6 +14,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import java.lang.reflect.Field;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
@@ -23,6 +24,7 @@ import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
 class MinioStorageServiceTest {
@@ -119,6 +121,8 @@ class MinioStorageServiceTest {
     void cleanupExpiredObjects_deletesOnlyExpired() throws Exception {
         MinioStorageService spy = spy(service);
         doReturn(List.of("2026-07-01/a_12.jpg", "2026-07-09/b_12.jpg")).when(spy).listObjectKeys();
+        // removeObjects 现会遍历返回的惰性迭代器，必须 stub 为非空（否则遍历 null 会 NPE）
+        when(minioClient.removeObjects(any())).thenReturn(Collections.emptyList());
         int n = spy.cleanupExpiredObjects();
         assertThat(n).isEqualTo(1);
         ArgumentCaptor<RemoveObjectsArgs> cap = ArgumentCaptor.forClass(RemoveObjectsArgs.class);
