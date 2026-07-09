@@ -1,9 +1,11 @@
 package com.enviro.brain.service;
 
 import io.minio.MinioClient;
+import io.minio.PutObjectArgs;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
@@ -12,6 +14,8 @@ import java.util.List;
 import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.verify;
 
 @ExtendWith(MockitoExtension.class)
 class MinioStorageServiceTest {
@@ -70,5 +74,17 @@ class MinioStorageServiceTest {
                 "2026-07-09/oldname.jpg", // 解析失败，跳过
                 "2026-07-02/c_12.jpg");  // 边界不过期
         assertThat(service.selectExpiredKeys(keys, now, 7)).containsExactly("2026-07-01/a_12.jpg");
+    }
+
+    @Test
+    void uploadScreenshot_usesHourlyKey() throws Exception {
+        byte[] img = new byte[]{1, 2, 3};
+        // 固定时间由 buildObjectKey 决定；uploadScreenshot 内部用 LocalDateTime.now()
+        // 这里只验证 putObject 被调用且 object 名符合含 _HH 的模式
+        service.uploadScreenshot("三菱化学危废仓库1", img);
+        ArgumentCaptor<PutObjectArgs> cap = ArgumentCaptor.forClass(PutObjectArgs.class);
+        verify(minioClient).putObject(cap.capture());
+        String objName = cap.getValue().object();
+        assertThat(objName).matches(".*/三菱化学危废仓库1_\\d{2}\\.jpg$");
     }
 }

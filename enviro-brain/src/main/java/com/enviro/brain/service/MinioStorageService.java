@@ -26,10 +26,10 @@ import java.util.regex.Pattern;
  * 截图 MinIO 存储服务。
  *
  * <p>将摄像头截图字节上传到 MinIO，返回可访问的完整 URL。
- * 对象键格式：{@code {prefix}/{yyyy-MM-dd}/{safeCameraName}.jpg}（prefix 为空时省略），
- * 例如 {@code 2026-07-08/华达通危废仓库1.jpg}。
- * 对象键不含时分秒，故同一摄像头当天多次上传落到同一 key，MinIO putObject 默认覆盖旧对象，
- * 实现"当天一张图、最新巡检覆盖"的效果（DB 巡检记录仍按小时全量保留）。
+ * 对象键格式：{@code {prefix}/{yyyy-MM-dd}/{safeCameraName}_{HH}.jpg}（prefix 为空时省略），
+ * 例如 {@code 2026-07-08/华达通危废仓库1_14.jpg}。
+ * 对象键含两位小时（HH），同一摄像头每小时落到不同 key，避免跨小时巡检时 MinIO putObject
+ * 覆盖上一小时的最新截图（DB 巡检记录仍按小时全量保留）。
  * 其中 safeCameraName 仅剔除路径分隔符、URL 保留字与控制字符，保留中文等多语言字符。
  */
 @Slf4j
@@ -46,9 +46,9 @@ public class MinioStorageService {
     public MinioStorageService(MinioClient minioClient,
                                @Value("${enviro.minio.endpoint}") String endpoint,
                                @Value("${enviro.minio.bucket}") String bucket,
-                               @Value("${enviro.minio.prefix}") String prefix,
-                               int retentionDays,
-                               boolean cleanupEnabled) {
+                           @Value("${enviro.minio.prefix}") String prefix,
+                           @Value("${enviro.minio.retention-days:7}") int retentionDays,
+                           @Value("${enviro.minio.cleanup.enabled:true}") boolean cleanupEnabled) {
         this.minioClient = minioClient;
         this.endpoint = endpoint;
         this.bucket = bucket;
@@ -111,14 +111,7 @@ public class MinioStorageService {
             return null;
         }
         ensureBucket();
-        String datePart = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
-        String safeName = (cameraName == null || cameraName.isBlank())
-                ? UUID.randomUUID().toString()
-                : cameraName.replaceAll("[\\\\/:*?\"<>|%#\\x00-\\x1f ]", "_");
-        // 当天覆盖：对象键不含时分秒，同一摄像头当天多次上传落到同一 key，MinIO putObject 覆盖旧对象
-        String objectKey = (prefix == null || prefix.isBlank())
-                ? datePart + "/" + safeName + ".jpg"
-                : prefix + "/" + datePart + "/" + safeName + ".jpg";
+        String objectKey = buildObjectKey(cameraName, LocalDateTime.now());
 
         try {
             minioClient.putObject(PutObjectArgs.builder()
