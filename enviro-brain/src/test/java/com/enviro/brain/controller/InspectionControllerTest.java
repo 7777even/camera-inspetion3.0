@@ -60,4 +60,24 @@ class InspectionControllerTest {
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isUnauthorized());
     }
+
+    @Test
+    @DisplayName("POST /trigger?scenario=gangqu -> 202, routes to gangqu scenario")
+    void shouldTriggerGangquWhenScenarioParamGiven() throws Exception {
+        InspectionContext ctx = new InspectionContext();
+        ctx.setInspectId(42L);
+        ctx.setSyncVersion(99L);
+        ctx.setRecord(new InspectionRecord());
+        when(inspectionService.prepareInspection("manual", "gangqu")).thenReturn(ctx);
+
+        mockMvc.perform(post("/api/v1/inspections/trigger")
+                        .param("scenario", "gangqu")
+                        .header("X-API-Key", "integration-test-key")
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isAccepted())
+                .andExpect(jsonPath("$.data.scenario").value("gangqu"));
+
+        verify(inspectionService).prepareInspection("manual", "gangqu");
+        verify(inspectionService).runInspectionAsync(ctx);
+    }
 }

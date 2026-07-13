@@ -18,12 +18,13 @@ public class InspectionController {
     private final InspectionService inspectionService;
 
     @PostMapping("/trigger")
-    public ResponseEntity<ApiResponse<Map<String, Object>>> trigger() {
-        log.info("[Controller] 手动触发巡检");
-        InspectionContext ctx = inspectionService.prepareInspection("manual", "enviro");
+    public ResponseEntity<ApiResponse<Map<String, Object>>> trigger(
+            @RequestParam(required = false) String scenario) {
+        String sc = (scenario == null || scenario.isBlank()) ? "enviro" : scenario;
+        log.info("[Controller] 手动触发巡检，场景={}", sc);
+        InspectionContext ctx = inspectionService.prepareInspection("manual", sc);
         inspectionService.runInspectionAsync(ctx);
         return ResponseEntity.accepted().body(
-                ApiResponse.success(Map.of("taskId", ctx.getInspectId(), "status", "running"))
-        );
+            ApiResponse.success(Map.of("taskId", ctx.getInspectId(), "scenario", sc, "status", "running")));
     }
 }
